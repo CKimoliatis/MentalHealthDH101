@@ -7,7 +7,7 @@ const AboutPage = () => {
       name: 'Chris Kimoliatis',
       role: 'Web Developer',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ligula massa.',
-      image: '/images/chris.jpeg',
+      image: 'images/chris.jpeg',
       email: 'member1@example.com',
       linkedin: 'www.linkedin.com/in/ckimoliatis'
     },

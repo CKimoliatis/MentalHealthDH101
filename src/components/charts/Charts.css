@@ -1,0 +1,27 @@
+/* Chart specific styles */
+.recharts-wrapper {
+  margin: 0 auto;
+}
+
+.recharts-legend-wrapper {
+  padding-top: 1rem !important;
+}
+
+.recharts-default-legend {
+  text-align: center !important;
+}
+
+.recharts-legend-item-text {
+  color: #d1d5db !important;
+}
+
+/* Ensure charts are responsive on mobile */
+@media (max-width: 640px) {
+  .recharts-wrapper svg {
+    font-size: 12px;
+  }
+  
+  .recharts-surface {
+    width: 100% !important;
+  }
+}

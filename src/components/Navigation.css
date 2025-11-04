@@ -122,3 +122,29 @@
   background-color: #2563eb;
   font-weight: 500;
 }
+
+/* remove underline everywhere in the header nav (logo, desktop, mobile) */
+.header .nav a,
+.header .mobile-menu a,
+.header .logo {
+  text-decoration: none;
+}
+
+/* keep it off on hover/focus/visited too */
+.header .nav a:hover,
+.header .nav a:focus,
+.header .nav a:visited,
+.header .mobile-menu a:hover,
+.header .mobile-menu a:focus,
+.header .mobile-menu a:visited,
+.header .logo:hover,
+.header .logo:focus {
+  text-decoration: none;
+}
+
+/* make links behave like your old buttons */
+.nav-link,
+.mobile-menu-item,
+.logo {
+  display: inline-block; /* so the bottom border shows nicely */
+}

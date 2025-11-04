@@ -9,7 +9,7 @@ const AboutPage = () => {
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ligula massa.',
       image: 'images/chris.jpeg',
       email: 'member1@example.com',
-      linkedin: 'www.linkedin.com/in/ckimoliatis'
+      linkedin: 'https://linkedin.com/in/ckimoliatis'
     },
     ...Array(5).fill(null).map((_, i) => ({
       name: `Team Member ${i + 2}`,

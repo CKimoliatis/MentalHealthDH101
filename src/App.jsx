@@ -1,4 +1,5 @@
 // App.jsx (JSX version)
+import { useState } from "react";
 import { HashRouter, Routes, Route, Navigate } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
@@ -9,10 +10,15 @@ import AboutPage from "./pages/AboutPage";
 import "./App.css";
 
 export default function App() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   return (
     <HashRouter>
       <div className="app">
-        <Navigation /> {/* no currentPage / setCurrentPage props */}
+        <Navigation 
+          mobileMenuOpen={mobileMenuOpen} 
+          setMobileMenuOpen={setMobileMenuOpen} 
+        />
         <Routes>
           <Route path="/" element={<Navigate to="/narrative" replace />} />
           <Route path="/narrative" element={<NarrativePage />} />

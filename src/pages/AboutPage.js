@@ -4,6 +4,14 @@ import './Pages.css';
 const AboutPage = () => {
   const teamMembers = [
     {
+      name: 'Katherine Huynh',
+      role: 'Project Manager',
+      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ligula massa.',
+      image: 'images/kat.png',
+      email: 'member1@example.com',
+      linkedin: 'https://linkedin.com/in/katherineghuynh/'
+    },
+    {
       name: 'Chris Kimoliatis',
       role: 'Web Developer',
       description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ligula massa.',
@@ -11,7 +19,7 @@ const AboutPage = () => {
       email: 'member1@example.com',
       linkedin: 'https://linkedin.com/in/ckimoliatis'
     },
-    ...Array(5).fill(null).map((_, i) => ({
+    ...Array(4).fill(null).map((_, i) => ({
       name: `Team Member ${i + 2}`,
       role: 'Project Role',
       description: 'Proin porttitor, orci nec nonummy molestie, enim est eleifend mi.',

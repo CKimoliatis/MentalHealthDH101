@@ -24,8 +24,8 @@ const AboutPage = () => {
       role: 'Data Specialist',
       description: 'Alan Ruiz (he/him) is a second-year Statistics and Data Science major at UCLA. He is actively applying the data analysis skills learned in courses to his career pursuit as a sports analyst. Outside of class, you can find him researching and recording videos for his sports analysis YouTube channel “All Things Dodgers”, contributing to projects conducted by UCLA’s DataRes and Bruin Sports Analytics organizations, and supporting the local community with the UCLA Community Programs Office. As Data Specialist, Alan led the team in dataset analysis and facilitated group discussions that impacted the project’s direction. He also organized task delegation throughout the team and conducted comprehensive academic research to expand the project’s context.',
       image: 'images/alan.jpeg',
-      email: 'member1@example.com',
-      linkedin: 'https://linkedin.com/in/ckimoliatis'
+      email: 'ruiz.alan2024@gmail.com',
+      linkedin: 'https://www.linkedin.com/in/alan-ruiz24/'
     },
     {
       name: 'Kimya Jin',
@@ -33,7 +33,7 @@ const AboutPage = () => {
       description: 'Jingya(Kimya) Jin is a senior undergraduate student at UCLA, majoring in Statistics and Data Science. She has a strong interest in data analytics, mathematics, finance, and quantitative research, and is proficient in R, Python, and Tableau. As a Data Visualization Analyst, Kimya utilizes Tableau to design insightful dashboards and geographic maps that uncover complex patterns and regional trends. She integrates multiple data sources to analyze both historical and real-world factors behind research topics, combining analytical precision with storytelling clarity. Outside of academics, she enjoys traveling, attending concerts, and exploring new cultures and experiences that inspire creativity and broaden her perspective.',
       image: 'images/kimya.jpeg',
       email: 'member1@example.com',
-      linkedin: 'https://linkedin.com/in/ckimoliatis'
+      linkedin: 'https://www.linkedin.com/in/kimya-jin-809b48227/'
     },
     {
       name: 'Tsz Ching Cheng',
@@ -59,7 +59,7 @@ const AboutPage = () => {
         <h1 className="page-title">Meet the Team</h1>
         
         <p className="text-content" style={{ marginBottom: '3rem' }}>
-          Our team of six worked together over Fall Quarter 2025 to complete this digital humanities project, culminating in this WordPress website. All members contributed equally to each part of the project, with roles assigned to allow for one individual to coordinate work and ensure consistent quality of their designated section.
+          Our team of six worked together over Fall Quarter 2025 to complete this digital humanities project, culminating in this website. All members contributed equally to each part of the project, with roles assigned to allow for one individual to coordinate work and ensure consistent quality of their designated section.
         </p>
 
         <div className="team-grid">

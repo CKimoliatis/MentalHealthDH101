@@ -7,7 +7,7 @@ const NarrativePage = () => {
       <section className="hero-section">
         <h1 className="hero-title">The Silent Epidemic</h1>
         <p className="hero-description">
-          Analyzing the profound impact of the COVID-19 pandemic on student mental health and the future of education.
+          How do race, gender, and economic status affect education opportunities and success?
         </p>
       </section>
 

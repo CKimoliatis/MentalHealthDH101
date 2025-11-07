@@ -7,7 +7,7 @@ const AboutPage = () => {
       name: 'Katherine Huynh',
       role: 'Project Manager',
       description: 'Katherine Huynh (she/her) is a fourth year undergraduate student at UCLA studying Statistics and Data Science. She is passionate about pursuing a career that allows her to apply the data science skills she learned in college to generate real world impact for businesses. Outside of academics, she was previously President of UCLA’s largest data science organization Data Resolutions and a data science consultant for various LA startups. Beyond data science, she is also currently a Creative Strategist at UCLA’s student run marketing agency Bruin Advertising and Marketing Team. She can be typically found exploring cafes in LA, sewing hand-embroidery, or hanging out with friends. As project manager, Katherine took initiative to define this project’s scope and direction. She organized meetings, created agendas, and managed assignment compilation and editing. She has also worked on synthesizing literature and data while creating various data visualizations to form conclusions.',
-      image: 'images/kat.png',
+      image: 'images/kat.jpeg',
       email: 'member1@example.com',
       linkedin: 'https://linkedin.com/in/katherineghuynh/'
     },

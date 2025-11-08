@@ -32,7 +32,7 @@ const AboutPage = () => {
       role: 'Data Specialist',
       description: 'Jingya(Kimya) Jin is a senior undergraduate student at UCLA, majoring in Statistics and Data Science. She has a strong interest in data analytics, mathematics, finance, and quantitative research, and is proficient in R, Python, and Tableau. As a Data Visualization Analyst, Kimya utilizes Tableau to design insightful dashboards and geographic maps that uncover complex patterns and regional trends. She integrates multiple data sources to analyze both historical and real-world factors behind research topics, combining analytical precision with storytelling clarity. Outside of academics, she enjoys traveling, attending concerts, and exploring new cultures and experiences that inspire creativity and broaden her perspective.',
       image: 'images/kimya.jpeg',
-      email: 'member1@example.com',
+      email: 'jingyakim3@gmail.com',
       linkedin: 'https://www.linkedin.com/in/kimya-jin-809b48227/'
     },
     {

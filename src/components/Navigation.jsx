@@ -1,5 +1,5 @@
 // components/Navigation.jsx
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navigation.css";
 
@@ -7,6 +7,23 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
   const closeMenu = () => setMobileMenuOpen && setMobileMenuOpen(false);
   const toggleMenu = () =>
     setMobileMenuOpen && setMobileMenuOpen(prev => !prev);
+
+  // Mobile submenu expand/collapse state per main section
+  const [mobileSections, setMobileSections] = useState({
+    narrative: false,
+    data: false,
+    about: false,
+  });
+
+  const toggleSection = key =>
+    setMobileSections(prev => ({ ...prev, [key]: !prev[key] }));
+
+  // Collapse subsections when the menu closes
+  useEffect(() => {
+    if (!mobileMenuOpen) {
+      setMobileSections({ narrative: false, data: false, about: false });
+    }
+  }, [mobileMenuOpen]);
 
   const desktopClass = ({ isActive }) =>
     `nav-link ${isActive ? "nav-link-active" : ""}`;
@@ -79,34 +96,61 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
           <NavLink to="/" className={mobileClass} onClick={closeMenu}>
             Home
           </NavLink>
-          <NavLink to="/narrative/introduction" className={mobileClass} onClick={closeMenu}>Narrative — Introduction</NavLink>
-          <NavLink to="/narrative/literature" className={mobileClass} onClick={closeMenu}>Narrative — Literature Review</NavLink>
-          <NavLink to="/narrative/significance" className={mobileClass} onClick={closeMenu}>Narrative — Significance</NavLink>
-          <NavLink to="/narrative/map2" className={mobileClass} onClick={closeMenu}>Narrative — Map 2</NavLink>
-          <NavLink to="/narrative/visualization" className={mobileClass} onClick={closeMenu}>Narrative — Data Visualization</NavLink>
-          <NavLink to="/narrative/conclusion" className={mobileClass} onClick={closeMenu}>Narrative — Conclusion</NavLink>
-          <NavLink to="/narrative/future" className={mobileClass} onClick={closeMenu}>Narrative — Future Research</NavLink>
-          <NavLink to="/data-critique" className={mobileClass} onClick={closeMenu}>
-            Data — Critique
-          </NavLink>
-          <NavLink to="/visualizations" className={mobileClass} onClick={closeMenu}>
-            Data — Visualizations
-          </NavLink>
-          <NavLink to="/about" className={mobileClass} onClick={closeMenu}>
-            About Us
-          </NavLink>
-          <NavLink to="/team" className={mobileClass} onClick={closeMenu}>
-            • Our Team
-          </NavLink>
-          <NavLink to="/sources" className={mobileClass} onClick={closeMenu}>
-            • Sourcing, Processing, & Presenting
-          </NavLink>
-          <NavLink to="/bibliography" className={mobileClass} onClick={closeMenu}>
-            • Bibliography
-          </NavLink>
-          <NavLink to="/acknowledgements" className={mobileClass} onClick={closeMenu}>
-            • Acknowledgements
-          </NavLink>
+          {/* Collapsible mobile sections mirroring desktop */}
+          {/* Narrative */}
+          <button
+            type="button"
+            className="mobile-section-toggle"
+            aria-expanded={mobileSections.narrative}
+            onClick={() => toggleSection("narrative")}
+          >
+            Narrative <span className={`caret ${mobileSections.narrative ? "open" : ""}`}>▾</span>
+          </button>
+          {mobileSections.narrative && (
+            <div className="mobile-submenu" role="group" aria-label="Narrative">
+              <NavLink to="/narrative/introduction" className={mobileClass} onClick={closeMenu}>Introduction</NavLink>
+              <NavLink to="/narrative/literature" className={mobileClass} onClick={closeMenu}>Literature Review</NavLink>
+              <NavLink to="/narrative/significance" className={mobileClass} onClick={closeMenu}>Significance</NavLink>
+              <NavLink to="/narrative/map2" className={mobileClass} onClick={closeMenu}>Map</NavLink>
+              <NavLink to="/narrative/visualization" className={mobileClass} onClick={closeMenu}>Data Visualization</NavLink>
+              <NavLink to="/narrative/conclusion" className={mobileClass} onClick={closeMenu}>Conclusion</NavLink>
+              <NavLink to="/narrative/future" className={mobileClass} onClick={closeMenu}>Future Research</NavLink>
+            </div>
+          )}
+
+          {/* Data */}
+          <button
+            type="button"
+            className="mobile-section-toggle"
+            aria-expanded={mobileSections.data}
+            onClick={() => toggleSection("data")}
+          >
+            Data <span className={`caret ${mobileSections.data ? "open" : ""}`}>▾</span>
+          </button>
+          {mobileSections.data && (
+            <div className="mobile-submenu" role="group" aria-label="Data">
+              <NavLink to="/data-critique" className={mobileClass} onClick={closeMenu}>Data Critique</NavLink>
+              <NavLink to="/sources" className={mobileClass} onClick={closeMenu}>Sourcing, Processing, & Presenting</NavLink>
+              <NavLink to="/bibliography" className={mobileClass} onClick={closeMenu}>Bibliography</NavLink>
+            </div>
+          )}
+
+          {/* About Us */}
+          <button
+            type="button"
+            className="mobile-section-toggle"
+            aria-expanded={mobileSections.about}
+            onClick={() => toggleSection("about")}
+          >
+            About Us <span className={`caret ${mobileSections.about ? "open" : ""}`}>▾</span>
+          </button>
+          {mobileSections.about && (
+            <div className="mobile-submenu" role="group" aria-label="About Us">
+              <NavLink to="/team" className={mobileClass} onClick={closeMenu}>Our Team</NavLink>
+              <NavLink to="/acknowledgements" className={mobileClass} onClick={closeMenu}>Acknowledgements</NavLink>
+            </div>
+          )}
+          
         </div>
       )}
     </header>

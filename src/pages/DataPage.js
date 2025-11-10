@@ -9,6 +9,13 @@ import './DataPage.css';
 const DataPage = () => {
   const [activeChart, setActiveChart] = useState('stress');
 
+  const chartCaptions = {
+    stress: 'Average reported stress levels by year.',
+    anxiety: 'Approximate changes in anxiety cases across periods.',
+    impact: 'Relative impact across academic, social, and health domains.',
+    support: 'How students use different support resources.',
+  };
+
   const chartButtons = [
     { id: 'stress', label: 'Stress Trends', icon: '📊' },
     { id: 'anxiety', label: 'Anxiety Cases', icon: '📈' },
@@ -23,42 +30,86 @@ const DataPage = () => {
       <div className="content-card">
         <section>
           <h2 className="section-title">Data Critique</h2>
-          <p className="text-content">
-            For our project, we chose to work with two datasets from the Stanford Education Data Archive (SEDA):  the “Administrative District Annual Subgroup 2024.2” dataset and the “Geographic District Long 5.0” dataset. Both datasets were developed by the Educational Opportunity Project (EOP) at Stanford University. Additionally, we saw that this project is supported by a grant from the Gates Foundation and uses source data from Zelma, NCES, along with the National Assessment Governing Board. The first dataset, “Administrative District Annual Subgroup 2024.2,” provides summaries of average math and reading scores across student subgroups defined by gender, race, and economic status. The dataset covers the years 2009 through 2024, allowing analysis of educational trends during and after the COVID-19 recovery period. The second dataset, “Geographic District Long 5.0,” focuses on the earlier period 2009–2019 and reports test score data by district, grade, year, and subject (Math or English/Language Arts). Each record represents a geographic district, including average academic performance and achievement gaps disaggregated by year, grade, and subject, allowing researchers to examine patterns of educational inequality.
-          </p>
-          <p className="text-content">
-            The SEDA dataset is separated into variables that allow us to compare student performance. First, this data is designed to track academic gaps. We can calculate the difference between average scores for Black and white students, for students from low-income families and higher-income families, and for male and female students. Second, since the data contains a period of data from 2009 to 2024, it shows historical trends as well. We can analyze and see if these gaps have been changing or staying the same over the years. Finally, the separation by school district illuminates geographic inequality. We can identify academic gaps across the entire country to see if they vary significantly by region. This allows us to identify where gaps are unusually small or where they are abnormally large.
-          </p>
-          <p className="text-content">
-            The SEDA dataset provides a detailed quantitative view of educational performance by district, year, and subgroup, such as race, gender, and socioeconomic status, but it also leaves out a great deal of important context that shapes why these patterns exist. It focuses only on average test scores, so it does not include individual student data, classroom experiences, or the voices of teachers and families. The dataset also lacks information about school funding, teacher quality, curriculum design, and learning resources. All of these variables have a direct impact on students’ academic performance. It does not show home and community factors such as parental education, family income levels beyond subgroup averages, access to the internet or technology, and emotional well-being. Because of this, the data only captures what is easily measurable, not what is deeply meaningful.
-          </p>
-          <p className="text-content">
-            The structure of the dataset reflects a particular way of thinking about education, which is an ideology of quantification. It treats learning, opportunity, and inequality as things that can be summarized through numbers and categories. By dividing data strictly by demographics and test results, it assumes that academic inequality can be fully represented through measurable “gaps.” This approach simplifies human experiences into statistics and ignores the social, cultural, and emotional complexities behind those numbers. It also overlooks how race, class, and gender intersect in real life to shape opportunities differently for each student.
-          </p>
-          <p className="text-content">
-            If these datasets were our only sources, we could describe where educational gaps exist and how they change over time, but not why they occur or how they might be resolved. The broader social forces, such as policy choices, historical inequities, and cultural contexts, that underlie the data would remain invisible. Therefore, while the SEDA datasets provide a powerful macro-level framework for understanding educational inequality, their insights must be interpreted within the larger context of lived experiences and systemic structures.
-          </p>
+
+          <details className="accordion" open>
+            <summary className="accordion-summary subsection-title">Datasets Used</summary>
+            <div className="accordion-content">
+              <ul className="research-list">
+                <li className="research-item">Administrative District Annual Subgroup 2024.2: summaries of average math and reading scores across subgroups (gender, race, economic status), spanning 2009–2024 to capture trends through the COVID-19 recovery period.</li>
+                <li className="research-item">Geographic District Long 5.0: district-level test scores by year, grade, and subject (Math or ELA) for 2009–2019, including average performance and achievement gaps.</li>
+                <li className="research-item">Developed by Stanford’s Educational Opportunity Project (EOP); sources include NCES and the National Assessment Governing Board, with support from the Gates Foundation.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details className="accordion">
+            <summary className="accordion-summary subsection-title">What We Can Learn</summary>
+            <div className="accordion-content">
+              <ul className="research-list">
+                <li className="research-item">Track achievement gaps (e.g., Black–White, low–high income, male–female) using subgroup summaries.</li>
+                <li className="research-item">Observe historical trends from 2009–2024 to see whether gaps widen, narrow, or hold steady.</li>
+                <li className="research-item">Compare geographic inequality across districts and regions to spot unusually small or large gaps.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details className="accordion">
+            <summary className="accordion-summary subsection-title">What’s Missing from the Data</summary>
+            <div className="accordion-content">
+              <ul className="research-list">
+                <li className="research-item">No classroom-level experiences or voices of students, families, and teachers.</li>
+                <li className="research-item">Limited context on resources (funding, teacher quality, curriculum, materials, technology access).</li>
+                <li className="research-item">Few community factors (parental education, detailed income dynamics, emotional well‑being).</li>
+              </ul>
+            </div>
+          </details>
+
+          <details className="accordion">
+            <summary className="accordion-summary subsection-title">How the Data Frames the Problem</summary>
+            <div className="accordion-content">
+              <ul className="research-list">
+                <li className="research-item">Emphasizes measurable gaps, reducing complex realities to aggregates and categories.</li>
+                <li className="research-item">Risks overlooking intersectionality and the social, cultural, and emotional context behind scores.</li>
+              </ul>
+            </div>
+          </details>
+
+          <details className="accordion">
+            <summary className="accordion-summary subsection-title">Interpreting with Care</summary>
+            <div className="accordion-content">
+              <ul className="research-list">
+                <li className="research-item">Use quantitative patterns as a starting point—not a full explanation of <em>why</em>.</li>
+                <li className="research-item">Pair results with local context, policy history, and lived experiences.</li>
+                <li className="research-item">Avoid causal claims without additional evidence or mixed‑methods support.</li>
+              </ul>
+            </div>
+          </details>
         </section>
       </div>
 
       <div className="content-card">
         <section>
           <h2 className="section-title">Methodology</h2>
-          <p className="text-content">
-            Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales.
-          </p>
-          <p className="text-content">
-            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam.
-          </p>
+          <ul className="research-list">
+            <li className="research-item">Select districts and subgroups from the SEDA tables (2009–2024; 2009–2019 for district‑long).</li>
+            <li className="research-item">Compute achievement gaps (e.g., Black–White, low–high income, male–female) from subgroup summaries.</li>
+            <li className="research-item">Track trends across years and regions; highlight the COVID‑19 disruption and recovery window.</li>
+            <li className="research-item">Visualize patterns with lines and bars; include notes on uncertainty where available.</li>
+            <li className="research-item">Document cleaning steps, suppressed/missing values, and any data transformations.</li>
+          </ul>
         </section>
       </div>
 
       <div className="content-card">
         <section>
           <h2 className="section-title">Limitations</h2>
-          <p className="text-content">
-            Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaEos. Curabitur sodales ligula in libero.
-          </p>
+          <ul className="research-list">
+            <li className="research-item">Aggregated test scores are proxies for learning and opportunity, not full experiences.</li>
+            <li className="research-item">Assessment changes and state differences can affect comparability over time and place.</li>
+            <li className="research-item">Important context (funding, staffing, curriculum, home environment) is not included.</li>
+            <li className="research-item">Suppressed or missing values may bias patterns if not handled carefully.</li>
+            <li className="research-item">Ecological fallacy risk: district averages may not describe individual students.</li>
+          </ul>
         </section>
       </div>
 
@@ -89,6 +140,7 @@ const DataPage = () => {
             {activeChart === 'anxiety' && <AnxietyChart />}
             {activeChart === 'impact' && <ImpactChart />}
             {activeChart === 'support' && <SupportChart />}
+            <p className="chart-caption">{chartCaptions[activeChart]}</p>
           </div>
         </section>
       </div>

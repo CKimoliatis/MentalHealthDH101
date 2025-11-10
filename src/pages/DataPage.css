@@ -9,7 +9,7 @@
 .chart-button {
   padding: 0.75rem 1.5rem;
   border-radius: 0.5rem;
-  font-weight: 600;
+  font-weight: normal;
   transition: all 0.3s;
   cursor: pointer;
   border: none;
@@ -53,7 +53,7 @@
 
 .chart-title {
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: normal;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -63,4 +63,61 @@
   font-size: 0.875rem;
   text-align: center;
   margin-top: 1rem;
+}
+
+/* Subsection headings for clearer structure on DataPage */
+.subsection-title {
+  font-size: 1.25rem;
+  font-weight: normal;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: #e5e7eb;
+}
+
+/* Accordion styles for collapsible subsections */
+.accordion {
+  background-color: rgba(17, 24, 39, 0.35);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.accordion-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+}
+
+/* Hide default marker in WebKit */
+.accordion-summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Add custom caret */
+.accordion-summary::before {
+  content: '▸';
+  color: #9ca3af;
+  transition: transform 0.2s ease;
+}
+
+details[open] .accordion-summary::before {
+  transform: rotate(90deg);
+}
+
+.accordion-summary:hover {
+  background-color: rgba(55, 65, 81, 0.5);
+}
+
+.accordion-summary:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.4);
+  border-radius: 0.375rem;
+}
+
+.accordion-content {
+  padding: 0 1rem 1rem;
 }

@@ -37,7 +37,7 @@ const AboutPage = () => {
     },
     {
       name: 'Tsz Ching Cheng',
-      role: 'Content specialist',
+      role: 'Content Specialist',
       description: 'Tsz Ching Cheng (she/her) is a fourth-year undergraduate student at UCLA majoring in Statistics and Data Science. She is passionate about using data to tell meaningful stories and creating engaging visual narratives that connect analytical insights with real-world impact. As the Content Developer, Tsz Ching oversaw the authoring of the site’s main narrative and ensured that the data visualizations and maps integrated seamlessly with the written content. Outside of academics, she enjoys photography, exploring local cafes, and discovering creative inspiration through art and film.',
       image: 'images/tsz.jpeg',
       email: 'member1@example.com',
@@ -45,7 +45,7 @@ const AboutPage = () => {
     },
     {
       name: 'Sooyeon Byun',
-      role: 'Content specialist',
+      role: 'Content Specialist',
       description: 'Sooyeon Byun (she/her) is a fourth-year undergraduate student at UCLA majoring in Statistics and Data Science. She is passionate about how data can reveal patterns in human behavior and social systems. For this project, Sooyeon analyzed trends within the Stanford Education Data Archive (SEDA) datasets, while also contributing to the data critique by evaluating the dataset’s structure and potential biases. She also worked on visualizing and interpreting data to support the team’s main research narrative. Beyond academics, she enjoys traveling, photography, and making handmade charms.',
       image: 'images/sooyeon.jpeg',
       email: 'member1@example.com',
@@ -57,10 +57,15 @@ const AboutPage = () => {
     <main className="page-container">
       <div className="content-card">
         <h1 className="page-title">Meet the Team</h1>
-        
-        <p className="text-content" style={{ marginBottom: '3rem' }}>
-          Our team of six worked together over Fall Quarter 2025 to complete this digital humanities project, culminating in this website. All members contributed equally to each part of the project, with roles assigned to allow for one individual to coordinate work and ensure consistent quality of their designated section.
-        </p>
+
+        <h3 className="subsection-title">Overview</h3>
+        <ul className="research-list" style={{ marginBottom: '2rem' }}>
+          <li className="research-item">Collaborated over Fall Quarter 2025 to design, analyze, and publish this project.</li>
+          <li className="research-item">Contributed across research, writing, visualization, and web to keep evidence and narrative aligned.</li>
+          <li className="research-item">Assigned roles to coordinate work and maintain consistency, while sharing responsibilities across tasks.</li>
+        </ul>
+
+        <h3 className="subsection-title">Team Members</h3>
 
         <div className="team-grid">
           {teamMembers.map((member, index) => (
@@ -78,20 +83,25 @@ const AboutPage = () => {
               )}
               <h2 className="team-name">{member.name}</h2>
               <p className="team-role">{member.role}</p>
-              <p className="team-description">{member.description}</p>
-              <div className="team-links">
+              <div className="team-links" style={{ marginBottom: '0.5rem' }}>
                 <a href={`mailto:${member.email}`} className="team-link">
                   ✉️
                 </a>
-                <a 
-                  href={member.linkedin} 
-                  target="_blank" 
-                  rel="noopener noreferrer" 
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="team-link"
                 >
                   💼
                 </a>
               </div>
+              <details className="accordion">
+                <summary className="accordion-summary">Read Bio</summary>
+                <div className="accordion-content">
+                  <p className="team-description">{member.description}</p>
+                </div>
+              </details>
             </div>
           ))}
         </div>

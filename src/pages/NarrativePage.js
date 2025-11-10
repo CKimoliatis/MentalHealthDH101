@@ -24,7 +24,7 @@ const NarrativePage = () => {
   <section className="content-card">
     <h2 className="section-title">Data Processing</h2>
 
-    <details className="accordion" open>
+    <details className="accordion">
       <summary className="accordion-summary subsection-title">Overview (Led by Kimya & Jasmine)</summary>
       <div className="accordion-content">
         <p className="text-content">
@@ -61,7 +61,7 @@ const NarrativePage = () => {
   <section className="content-card">
     <h2 className="section-title">Presentation</h2>
 
-    <details className="accordion" open>
+    <details className="accordion">
       <summary className="accordion-summary subsection-title">Visualization Methods</summary>
       <div className="accordion-content">
         <ul className="research-list">

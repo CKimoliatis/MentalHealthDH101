@@ -31,7 +31,7 @@ const DataPage = () => {
         <section>
           <h2 className="section-title">Data Critique</h2>
 
-          <details className="accordion" open>
+          <details className="accordion">
             <summary className="accordion-summary subsection-title">Datasets Used</summary>
             <div className="accordion-content">
               <ul className="research-list">

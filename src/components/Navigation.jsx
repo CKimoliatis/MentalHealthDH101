@@ -16,25 +16,50 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
   return (
     <header className="header">
       <nav className="nav">
-        {/* Logo acts like your old button to go home */}
-        <NavLink to="/narrative" className="logo" onClick={closeMenu}>
+        {/* Logo goes to Home */}
+        <NavLink to="/" className="logo" onClick={closeMenu}>
           Project:Mind
         </NavLink>
 
         {/* Desktop Navigation */}
         <div className="nav-desktop">
-          <NavLink to="/narrative" className={desktopClass} onClick={closeMenu}>
-            Narrative
+          <NavLink to="/" className={desktopClass} onClick={closeMenu}>
+            Home
           </NavLink>
-          <NavLink to="/data" className={desktopClass} onClick={closeMenu}>
-            The Data
-          </NavLink>
-          <NavLink to="/resources" className={desktopClass} onClick={closeMenu}>
-            Resources
-          </NavLink>
-          <NavLink to="/about" className={desktopClass} onClick={closeMenu}>
-            About Us
-          </NavLink>
+          <div className="nav-dropdown">
+            <button type="button" className="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Narrative <span className="caret">▾</span>
+            </button>
+            <div className="dropdown-menu" role="menu">
+              <NavLink to="/narrative/introduction" className="dropdown-item" onClick={closeMenu}>Introduction</NavLink>
+              <NavLink to="/narrative/literature" className="dropdown-item" onClick={closeMenu}>Literature Review</NavLink>
+              <NavLink to="/narrative/significance" className="dropdown-item" onClick={closeMenu}>Significance</NavLink>
+              <NavLink to="/narrative/map2" className="dropdown-item" onClick={closeMenu}>Map</NavLink>
+              <NavLink to="/narrative/visualization" className="dropdown-item" onClick={closeMenu}>Data Visualization</NavLink>
+              <NavLink to="/narrative/conclusion" className="dropdown-item" onClick={closeMenu}>Conclusion</NavLink>
+              <NavLink to="/narrative/future" className="dropdown-item" onClick={closeMenu}>Future Research</NavLink>
+            </div>
+          </div>
+          <div className="nav-dropdown">
+            <button type="button" className="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Data <span className="caret">▾</span>
+            </button>
+            <div className="dropdown-menu" role="menu">
+              <NavLink to="/data-critique" className="dropdown-item" onClick={closeMenu}>Data Critique</NavLink>
+              <NavLink to="/sources" className="dropdown-item" onClick={closeMenu}>Sourcing, Processing, & Presenting</NavLink>
+              <NavLink to="/bibliography" className="dropdown-item" onClick={closeMenu}>Bibliography</NavLink>
+            </div>
+          </div>
+          <div className="nav-dropdown">
+            <button type="button" className="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              About Us <span className="caret">▾</span>
+            </button>
+            <div className="dropdown-menu" role="menu">
+              <NavLink to="/team" className="dropdown-item" onClick={closeMenu}>Our Team</NavLink>
+
+              <NavLink to="/acknowledgements" className="dropdown-item" onClick={closeMenu}>Acknowledgements</NavLink>
+            </div>
+          </div>
         </div>
 
         {/* Mobile Menu Button */}
@@ -51,17 +76,36 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div className="mobile-menu">
-          <NavLink to="/narrative" className={mobileClass} onClick={closeMenu}>
-            Narrative
+          <NavLink to="/" className={mobileClass} onClick={closeMenu}>
+            Home
           </NavLink>
-          <NavLink to="/data" className={mobileClass} onClick={closeMenu}>
-            The Data
+          <NavLink to="/narrative/introduction" className={mobileClass} onClick={closeMenu}>Narrative — Introduction</NavLink>
+          <NavLink to="/narrative/literature" className={mobileClass} onClick={closeMenu}>Narrative — Literature Review</NavLink>
+          <NavLink to="/narrative/significance" className={mobileClass} onClick={closeMenu}>Narrative — Significance</NavLink>
+          <NavLink to="/narrative/map2" className={mobileClass} onClick={closeMenu}>Narrative — Map 2</NavLink>
+          <NavLink to="/narrative/visualization" className={mobileClass} onClick={closeMenu}>Narrative — Data Visualization</NavLink>
+          <NavLink to="/narrative/conclusion" className={mobileClass} onClick={closeMenu}>Narrative — Conclusion</NavLink>
+          <NavLink to="/narrative/future" className={mobileClass} onClick={closeMenu}>Narrative — Future Research</NavLink>
+          <NavLink to="/data-critique" className={mobileClass} onClick={closeMenu}>
+            Data — Critique
           </NavLink>
-          <NavLink to="/resources" className={mobileClass} onClick={closeMenu}>
-            Resources
+          <NavLink to="/visualizations" className={mobileClass} onClick={closeMenu}>
+            Data — Visualizations
           </NavLink>
           <NavLink to="/about" className={mobileClass} onClick={closeMenu}>
             About Us
+          </NavLink>
+          <NavLink to="/team" className={mobileClass} onClick={closeMenu}>
+            • Our Team
+          </NavLink>
+          <NavLink to="/sources" className={mobileClass} onClick={closeMenu}>
+            • Sourcing, Processing, & Presenting
+          </NavLink>
+          <NavLink to="/bibliography" className={mobileClass} onClick={closeMenu}>
+            • Bibliography
+          </NavLink>
+          <NavLink to="/acknowledgements" className={mobileClass} onClick={closeMenu}>
+            • Acknowledgements
           </NavLink>
         </div>
       )}

@@ -8,7 +8,7 @@
 }
 
 .nav {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 1rem;
   display: flex;
@@ -48,7 +48,7 @@
   border: none;
   cursor: pointer;
   padding: 0.5rem 0;
-  font-size: 1rem;
+  font-size: 0.95rem;
   transition: color 0.3s;
   position: relative;
 }
@@ -108,6 +108,7 @@
   background: none;
   border: none;
   cursor: pointer;
+  font-size: 0.95rem;
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -119,6 +120,53 @@
 .mobile-menu-item-active {
   color: white;
   background-color: #2563eb;
+}
+
+/* Dropdown (desktop) */
+.nav-dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.caret {
+  font-size: 0.8em;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1f2937;
+  border: 1px solid #374151;
+  border-radius: 0.25rem;
+  min-width: 14rem;
+  padding: 0.25rem 0;
+  box-shadow: 0 10px 15px -3px rgba(0,0,0,0.4);
+  display: none;
+  z-index: 60;
+}
+
+.nav-dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  color: #d1d5db;
+  font-size: 0.95rem;
+  text-decoration: none;
+  white-space: normal;
+}
+
+.dropdown-item:hover {
+  background-color: #3b82f6;
+  color: white;
 }
 
 /* remove underline everywhere in the header nav (logo, desktop, mobile) */

@@ -1,7 +1,7 @@
 import React from 'react';
-import './Pages.css';
+import '../Pages.css';
 
-const AboutPage = () => {
+const TeamPage = () => {
   const teamMembers = [
     {
       name: 'Katherine Huynh',
@@ -55,59 +55,36 @@ const AboutPage = () => {
 
   return (
     <main className="page-container">
-      <div className="content-card">
-        <h1 className="page-title">Meet the Team</h1>
+      <section className="team-longform">
+        <h1 className="longform-title">Meet the Team</h1>
 
-        <h3 className="subsection-title">Overview</h3>
-        <ul className="research-list" style={{ marginBottom: '2rem' }}>
-          <li className="research-item">Collaborated over Fall Quarter 2025 to design, analyze, and publish this project.</li>
-          <li className="research-item">Contributed across research, writing, visualization, and web to keep evidence and narrative aligned.</li>
-          <li className="research-item">Assigned roles to coordinate work and maintain consistency, while sharing responsibilities across tasks.</li>
-        </ul>
-
-        <h3 className="subsection-title">Team Members</h3>
-
-        <div className="team-grid">
+        <div className="team-list">
           {teamMembers.map((member, index) => (
-            <div key={index} className="team-member">
-              {member.image ? (
-                <img 
-                  className="team-photo" 
-                  src={member.image} 
-                  alt={member.name} 
-                />
-              ) : (
-                <div className="team-photo-placeholder">
-                  PFP
-                </div>
-              )}
-              <h2 className="team-name">{member.name}</h2>
-              <p className="team-role">{member.role}</p>
-              <div className="team-links" style={{ marginBottom: '0.5rem' }}>
-                <a href={`mailto:${member.email}`} className="team-link">
-                  ✉️
-                </a>
-                <a
-                  href={member.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="team-link"
-                >
-                  💼
-                </a>
+            <article key={index} className={`team-row ${index % 2 ? 'reverse' : ''}`}>
+              <div className="team-row-photo">
+                {member.image ? (
+                  <img className="team-photo" src={member.image} alt={member.name} />
+                ) : (
+                  <div className="team-photo-placeholder">PFP</div>
+                )}
               </div>
-              <details className="accordion">
-                <summary className="accordion-summary">Read Bio</summary>
-                <div className="accordion-content">
-                  <p className="team-description">{member.description}</p>
+              <div className="team-row-content">
+                <div className="team-header">
+                  <h2 className="team-name">{member.name}</h2>
+                  <div className="team-links-inline">
+                    <a href={`mailto:${member.email}`} className="team-link">✉️</a>
+                    <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="team-link">💼</a>
+                  </div>
                 </div>
-              </details>
-            </div>
+                <p className="team-role">{member.role}</p>
+                <p className="team-description">{member.description}</p>
+              </div>
+            </article>
           ))}
         </div>
-      </div>
+      </section>
     </main>
   );
 };
 
-export default AboutPage;
+export default TeamPage;

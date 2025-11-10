@@ -10,15 +10,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #111827;
-  color: white;
+  background-color: #ffffff;
+  color: #111827;
   margin: 0; /* Add this */
   padding: 0; /* Add this */
 }
 
 .app {
   min-height: 100vh;
-  background-color: #111827;
+  background-color: #ffffff;
   margin: 0; /* Add this */
   padding: 0; /* Add this */
 }

@@ -154,10 +154,6 @@
   transition: transform 0.2s ease;
 }
 
-/* Hide legacy flat mobile links after the first (Home) */
-.mobile-menu > .mobile-menu-item ~ .mobile-menu-item {
-  display: none;
-}
 
 /* Dropdown (desktop) */
 .nav-dropdown {

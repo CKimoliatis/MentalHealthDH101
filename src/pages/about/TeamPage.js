@@ -82,6 +82,9 @@ const TeamPage = () => {
             </article>
           ))}
         </div>
+        <div className="next-section">
+          <a className="next-link" href="#/acknowledgements">Next section → Acknowledgements</a>
+        </div>
       </section>
     </main>
   );

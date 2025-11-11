@@ -8,10 +8,12 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
   const toggleMenu = () =>
     setMobileMenuOpen && setMobileMenuOpen(prev => !prev);
 
-  // Mobile submenu expand/collapse state per main section
+  // Mobile submenu expand/collapse state per main section (mirrors desktop)
   const [mobileSections, setMobileSections] = useState({
+    introduction: false,
     narrative: false,
     data: false,
+    conclusions: false,
     about: false,
   });
 
@@ -21,7 +23,13 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
   // Collapse subsections when the menu closes
   useEffect(() => {
     if (!mobileMenuOpen) {
-      setMobileSections({ narrative: false, data: false, about: false });
+      setMobileSections({
+        introduction: false,
+        narrative: false,
+        data: false,
+        conclusions: false,
+        about: false,
+      });
     }
   }, [mobileMenuOpen]);
 
@@ -45,16 +53,25 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
           </NavLink>
           <div className="nav-dropdown">
             <button type="button" className="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Introduction <span className="caret">▾</span>
+            </button>
+            <div className="dropdown-menu" role="menu">
+              <NavLink to="/introduction/background" className="dropdown-item" onClick={closeMenu}>Background Information</NavLink>
+              <NavLink to="/introduction/timeline" className="dropdown-item" onClick={closeMenu}>Timeline</NavLink>
+              <NavLink to="/introduction/literature" className="dropdown-item" onClick={closeMenu}>Literature Review</NavLink>
+            </div>
+          </div>
+           {/* <NavLink to="/data-critique" className={desktopClass} onClick={closeMenu}>
+            Data Critique
+          </NavLink> */}
+          <div className="nav-dropdown">
+            <button type="button" className="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
               Narrative <span className="caret">▾</span>
             </button>
             <div className="dropdown-menu" role="menu">
-              <NavLink to="/narrative/introduction" className="dropdown-item" onClick={closeMenu}>Introduction</NavLink>
-              <NavLink to="/narrative/literature" className="dropdown-item" onClick={closeMenu}>Literature Review</NavLink>
-              <NavLink to="/narrative/significance" className="dropdown-item" onClick={closeMenu}>Significance</NavLink>
-              <NavLink to="/narrative/map2" className="dropdown-item" onClick={closeMenu}>Map</NavLink>
-              <NavLink to="/narrative/visualization" className="dropdown-item" onClick={closeMenu}>Data Visualization</NavLink>
-              <NavLink to="/narrative/conclusion" className="dropdown-item" onClick={closeMenu}>Conclusion</NavLink>
-              <NavLink to="/narrative/future" className="dropdown-item" onClick={closeMenu}>Future Research</NavLink>
+              <NavLink to="/narrative/presenting" className="dropdown-item" onClick={closeMenu}>Presenting our work</NavLink>
+              <NavLink to="/narrative/pre-covid" className="dropdown-item" onClick={closeMenu}>Pre-Covid Analysis</NavLink>
+              <NavLink to="/narrative/post-covid" className="dropdown-item" onClick={closeMenu}>Post Covid Analysis</NavLink>
             </div>
           </div>
           <div className="nav-dropdown">
@@ -69,11 +86,21 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
           </div>
           <div className="nav-dropdown">
             <button type="button" className="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+              Conclusions <span className="caret">▾</span>
+            </button>
+            <div className="dropdown-menu" role="menu">
+              <NavLink to="/conclusions/results" className="dropdown-item" onClick={closeMenu}>Results</NavLink>
+              <NavLink to="/conclusions/limitations" className="dropdown-item" onClick={closeMenu}>Limitations</NavLink>
+              <NavLink to="/conclusions/discussions" className="dropdown-item" onClick={closeMenu}>Discussions</NavLink>
+              
+            </div>
+          </div>
+          <div className="nav-dropdown">
+            <button type="button" className="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
               About Us <span className="caret">▾</span>
             </button>
             <div className="dropdown-menu" role="menu">
               <NavLink to="/team" className="dropdown-item" onClick={closeMenu}>Our Team</NavLink>
-
               <NavLink to="/acknowledgements" className="dropdown-item" onClick={closeMenu}>Acknowledgements</NavLink>
             </div>
           </div>
@@ -96,7 +123,24 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
           <NavLink to="/" className={mobileClass} onClick={closeMenu}>
             Home
           </NavLink>
-          {/* Collapsible mobile sections mirroring desktop */}
+
+          {/* Introduction */}
+          <button
+            type="button"
+            className="mobile-section-toggle"
+            aria-expanded={mobileSections.introduction}
+            onClick={() => toggleSection("introduction")}
+          >
+            Introduction <span className={`caret ${mobileSections.introduction ? "open" : ""}`}>▾</span>
+          </button>
+          {mobileSections.introduction && (
+            <div className="mobile-submenu" role="group" aria-label="Introduction">
+              <NavLink to="/introduction/background" className={mobileClass} onClick={closeMenu}>Background Information</NavLink>
+              <NavLink to="/introduction/timeline" className={mobileClass} onClick={closeMenu}>Timeline</NavLink>
+              <NavLink to="/introduction/literature" className={mobileClass} onClick={closeMenu}>Literature Review</NavLink>
+            </div>
+          )}
+
           {/* Narrative */}
           <button
             type="button"
@@ -108,13 +152,9 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
           </button>
           {mobileSections.narrative && (
             <div className="mobile-submenu" role="group" aria-label="Narrative">
-              <NavLink to="/narrative/introduction" className={mobileClass} onClick={closeMenu}>Introduction</NavLink>
-              <NavLink to="/narrative/literature" className={mobileClass} onClick={closeMenu}>Literature Review</NavLink>
-              <NavLink to="/narrative/significance" className={mobileClass} onClick={closeMenu}>Significance</NavLink>
-              <NavLink to="/narrative/map2" className={mobileClass} onClick={closeMenu}>Map</NavLink>
-              <NavLink to="/narrative/visualization" className={mobileClass} onClick={closeMenu}>Data Visualization</NavLink>
-              <NavLink to="/narrative/conclusion" className={mobileClass} onClick={closeMenu}>Conclusion</NavLink>
-              <NavLink to="/narrative/future" className={mobileClass} onClick={closeMenu}>Future Research</NavLink>
+              <NavLink to="/narrative/presenting" className={mobileClass} onClick={closeMenu}>Presenting our work</NavLink>
+              <NavLink to="/narrative/pre-covid" className={mobileClass} onClick={closeMenu}>Pre-Covid Analysis</NavLink>
+              <NavLink to="/narrative/post-covid" className={mobileClass} onClick={closeMenu}>Post Covid Analysis</NavLink>
             </div>
           )}
 
@@ -135,6 +175,23 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
             </div>
           )}
 
+          {/* Conclusions */}
+          <button
+            type="button"
+            className="mobile-section-toggle"
+            aria-expanded={mobileSections.conclusions}
+            onClick={() => toggleSection("conclusions")}
+          >
+            Conclusions <span className={`caret ${mobileSections.conclusions ? "open" : ""}`}>▾</span>
+          </button>
+          {mobileSections.conclusions && (
+            <div className="mobile-submenu" role="group" aria-label="Conclusions">
+              <NavLink to="/conclusions/results" className={mobileClass} onClick={closeMenu}>Results</NavLink>
+              <NavLink to="/conclusions/limitations" className={mobileClass} onClick={closeMenu}>Limitations</NavLink>
+              <NavLink to="/conclusions/discussions" className={mobileClass} onClick={closeMenu}>Discussions</NavLink>
+            </div>
+          )}
+
           {/* About Us */}
           <button
             type="button"
@@ -150,7 +207,6 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
               <NavLink to="/acknowledgements" className={mobileClass} onClick={closeMenu}>Acknowledgements</NavLink>
             </div>
           )}
-          
         </div>
       )}
     </header>

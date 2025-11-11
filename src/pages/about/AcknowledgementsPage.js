@@ -9,10 +9,13 @@ const AcknowledgementsPage = () => {
         <p className="text-content">
           We would like to thank our TA, Pietro Santachiara, for all his helpful feedback and guidance through working with our datasets. We would also like to thank Dr. Wendy Perla Kurtz for all the helpful resources she provided in class, such as how to use softwares like WordPress, Tableau, Timeline JS and how to think like true researchers.
         </p>
+
+        <div className="next-section">
+          <a className="next-link" href="#/">Return to Home →</a>
+        </div>
       </section>
     </main>
   );
 };
 
 export default AcknowledgementsPage;
-

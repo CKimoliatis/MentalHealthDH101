@@ -16,6 +16,10 @@ const BibliographyPage = () => {
           <p className="text-content">[Author Lastname, Firstname]. (Year). Title of book. Publisher. DOI/URL.</p>
           <p className="text-content">[Organization]. (Year). Dataset title and version. Repository/Publisher. DOI/URL.</p>
         </div>
+
+        <div className="next-section">
+          <a className="next-link" href="#/team">Next section → Our Team</a>
+        </div>
       </section>
     </main>
   );

@@ -31,10 +31,13 @@ const DataCritiquePage = () => {
         <p className="text-content">
           If these datasets were our only sources, we could describe where educational gaps exist and how they change over time, but not why they occur or how they might be resolved. The broader social forces, such as policy choices, historical inequities, and cultural contexts, that underlie the data would remain invisible. Therefore, while the SEDA datasets provide a powerful macro-level framework for understanding educational inequality, their insights must be interpreted within the larger context of lived experiences and systemic structures.
         </p>
+
+        <div className="next-section">
+          <a className="next-link" href="#/sources">Next section → Sourcing, Processing, & Presenting</a>
+        </div>
       </section>
     </main>
   );
 };
 
 export default DataCritiquePage;
-

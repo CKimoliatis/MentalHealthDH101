@@ -16,62 +16,6 @@
   }
 }
 
-/* Hero Section */
-.hero-section {
-  text-align: center;
-  padding: 3rem 0 4rem 0;
-}
-
-@media (min-width: 768px) {
-  .hero-section {
-    padding: 4rem 0;
-  }
-}
-
-.hero-title {
-  font-size: 2.25rem;
-  font-weight: normal;
-  margin-bottom: 1rem;
-  line-height: 1.2;
-}
-
-@media (min-width: 768px) {
-  .hero-title {
-    font-size: 3.75rem;
-  }
-}
-
-.hero-description {
-  font-size: 1rem;
-  color: #d1d5db;
-  max-width: 48rem;
-  margin: 0 auto;
-}
-
-@media (min-width: 768px) {
-  .hero-description {
-    font-size: 1.125rem;
-  }
-}
-
-/* Content Card */
-.content-card {
-  background-color: #1f2937;
-  border-radius: 0.5rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-  padding: 2rem;
-  margin-bottom: 2rem;
-  max-width: 100ch;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-@media (min-width: 768px) {
-  .content-card {
-    padding: 3rem;
-  }
-}
-
 /* Section Title */
 .section-title {
   font-size: 1.875rem;
@@ -79,20 +23,6 @@
   margin-bottom: 1.5rem;
   padding-bottom: 0.5rem;
   border-bottom: 2px solid #3b82f6;
-}
-
-.page-title {
-  font-size: 1.875rem;
-  font-weight: normal;
-  margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #3b82f6;
-}
-
-@media (min-width: 768px) {
-  .page-title {
-    font-size: 2.25rem;
-  }
 }
 
 /* Text Content */
@@ -122,69 +52,7 @@
   margin-bottom: 1rem;
 }
 
-/* Resource Item */
-.resource-item {
-  background-color: rgba(17, 24, 39, 0.5);
-  border-radius: 0.5rem;
-  padding: 1.5rem;
-  margin-bottom: 1.5rem;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
 
-.resource-item:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-
-.resource-title {
-  font-size: 1.125rem;
-  font-weight: normal;
-  color: #3b82f6;
-  margin-bottom: 0.5rem;
-  cursor: pointer;
-}
-
-.resource-title:hover {
-  text-decoration: underline;
-}
-
-.resource-description {
-  color: #d1d5db;
-}
-
-/* Team Grid */
-.team-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2.5rem;
-  margin-top: 3rem;
-}
-
-@media (min-width: 640px) {
-  .team-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
-  .team-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-/* Team Member Card */
-.team-member {
-  background-color: rgba(17, 24, 39, 0.5);
-  border-radius: 0.5rem;
-  padding: 1.5rem;
-  text-align: center;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s;
-}
-
-.team-member:hover {
-  transform: scale(1.05);
-}
 
 .team-photo {
   width: 12rem;
@@ -226,12 +94,6 @@
   margin-bottom: 1rem;
 }
 
-.team-links {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
 .team-link {
   color: #9ca3af;
   text-decoration: none;
@@ -241,56 +103,6 @@
 .team-link:hover {
   color: #3b82f6;
 }
-
-/* Shared subsection heading (used across pages) */
-.subsection-title {
-  font-size: 1.25rem;
-  font-weight: normal;
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
-  color: #e5e7eb;
-}
-
-/* Shared accordion styles (used on Data and About pages) */
-.accordion {
-  background-color: rgba(17, 24, 39, 0.35);
-  border: 1px solid rgba(59, 130, 246, 0.2);
-  border-radius: 0.5rem;
-  margin-top: 0.75rem;
-  margin-bottom: 0.5rem;
-  overflow: hidden;
-}
-
-.accordion-summary {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  list-style: none;
-  cursor: pointer;
-  padding: 0.5rem 0.75rem;
-  font-weight: normal;
-  color: #e5e7eb;
-}
-
-.accordion-summary::-webkit-details-marker { display: none; }
-
-.accordion-summary::before {
-  content: '▸';
-  color: #9ca3af;
-  transition: transform 0.2s ease;
-}
-
-details[open] .accordion-summary::before { transform: rotate(90deg); }
-
-.accordion-summary:hover { background-color: rgba(55, 65, 81, 0.5); }
-
-.accordion-summary:focus-visible {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.4);
-  border-radius: 0.375rem;
-}
-
-.accordion-content { padding: 0 0.75rem 0.75rem; }
 
 /* Team longform layout */
 .team-longform {
@@ -435,6 +247,32 @@ details[open] .accordion-summary::before { transform: rotate(90deg); }
   margin-top: 0.5rem;
 }
 
+/* Simple visualization placeholder (wireframe box with an X) */
+.viz-placeholder {
+  width: 100%;
+  /* Maintain a wide video-style ratio while staying responsive */
+  aspect-ratio: 16 / 9;
+  min-height: 240px;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background-color: #f9fafb;
+  /* Two thin diagonals forming an X */
+  background-image:
+    linear-gradient(45deg,
+      transparent calc(50% - 1px),
+      #9ca3af calc(50% - 1px),
+      #9ca3af calc(50% + 1px),
+      transparent calc(50% + 1px)
+    ),
+    linear-gradient(-45deg,
+      transparent calc(50% - 1px),
+      #9ca3af calc(50% - 1px),
+      #9ca3af calc(50% + 1px),
+      transparent calc(50% + 1px)
+    );
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
 /* Next section link */
 .next-section {
   margin-top: 2rem;
@@ -450,10 +288,7 @@ details[open] .accordion-summary::before { transform: rotate(90deg); }
   text-decoration: underline;
 }
 
-.page-title.no-underline {
-  border-bottom: none;
-  padding-bottom: 0;
-}
+/* removed unused .page-title.no-underline */
 
 .home-hero {
   position: relative;

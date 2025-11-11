@@ -59,6 +59,10 @@ const SourcesPage = () => {
         <p className="text-content">
           For design, we drew inspiration from course example websites and similar public data projects. We prioritized a consistent, readable layout with clear captions and legends, collapsible sections where appropriate, and responsive behavior for mobile. We also emphasized accessibility, including keyboard focus styles and adequate color contrast.
         </p>
+
+        <div className="next-section">
+          <a className="next-link" href="#/bibliography">Next section → Bibliography</a>
+        </div>
       </section>
     </main>
   );

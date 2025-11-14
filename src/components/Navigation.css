@@ -194,6 +194,11 @@
     left: auto;
     right: 0;
   }
+
+  .nav-dropdown.nav-dropdown-right .dropdown-menu {
+    left: auto;
+    right: 0;
+  }
 }
 
 .dropdown-item {

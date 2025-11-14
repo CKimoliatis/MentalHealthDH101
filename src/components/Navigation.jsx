@@ -87,7 +87,7 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
               <NavLink to="/narrative/post-covid" className="dropdown-item" onClick={closeMenu}>Post Covid Analysis</NavLink>
             </div>
           </div>
-          <div className="nav-dropdown">
+          <div className="nav-dropdown nav-dropdown-right">
             <button type="button" className="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
               Conclusions <span className="caret">▾</span>
             </button>
@@ -98,7 +98,7 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
               
             </div>
           </div>
-          <div className="nav-dropdown">
+          <div className="nav-dropdown nav-dropdown-right">
             <button type="button" className="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
               About Us <span className="caret">▾</span>
             </button>

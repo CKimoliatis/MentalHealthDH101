@@ -13,6 +13,7 @@ import NarrativePostCovidPage from "./pages/narrative/NarrativePostCovidPage";
 import DataCritiquePage from "./pages/data/DataCritiquePage";
 import HomePage from "./pages/HomePage";
 import SourcesPage from "./pages/data/SourcesPage";
+import ProcessingPage from "./pages/data/Processing";
 import TeamPage from "./pages/about/TeamPage";
 import BibliographyPage from "./pages/data/BibliographyPage";
 import AcknowledgementsPage from "./pages/about/AcknowledgementsPage";
@@ -54,6 +55,7 @@ export default function App() {
           <Route path="/data" element={<Navigate to="/data-critique" replace />} />
           <Route path="/data-critique" element={<DataCritiquePage />} />
           <Route path="/sources" element={<SourcesPage />} />
+          <Route path="/processing" element={<ProcessingPage />} />
           <Route path="/bibliography" element={<BibliographyPage />} />
           <Route path="/conclusions" element={<Navigate to="/conclusions/results" replace />} />
           <Route path="/conclusions/results" element={<ResultsPage />} />

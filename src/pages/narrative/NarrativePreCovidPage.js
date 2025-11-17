@@ -26,7 +26,7 @@ const FIG5_URL = "https://public.tableau.com/shared/8GZ3GNFYY?:display_count=n&:
 const NarrativePreCovidPage = () => {
   return (
     <main className="page-container">
-      <section className="longform longform-wide">
+      <section className="longform longform-wide narrative-pre">
         <h1 className="longform-title">Pre-COVID Narrative</h1>
 
         <h2 className="section-title">Socioeconomic Achievement Gap (non ECD and ECD) by State - 2009 - 2019</h2>

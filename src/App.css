@@ -38,4 +38,6 @@ html {
   padding: 0; /* Add this */
   /* Modern fix to keep layout stable when scrollbar appears/disappears */
   scrollbar-gutter: stable;
+  /* Slightly reduce global font scale (default ~16px) */
+  font-size: 15px;
 }

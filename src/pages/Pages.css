@@ -202,6 +202,12 @@
   line-height: 1.85;
 }
 
+/* Optional helper to align paragraph text like a print layout */
+.text-justify {
+  text-align: justify;
+  hyphens: auto;
+}
+
 /* Centered subtitle under big title */
 .longform-subtitle {
   text-align: center;
@@ -326,4 +332,25 @@
 
 .home-hero-subtitle {
   color: #e5e7eb;
+}
+
+/* Reusable responsive iframe embed wrapper */
+.embed-responsive {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* overridable via inline style from component */
+  min-height: 240px;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  background-color: #f9fafb;
+  overflow: hidden;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+}
+
+.embed-responsive iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
 }

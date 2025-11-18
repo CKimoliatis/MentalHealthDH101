@@ -12,7 +12,7 @@ const IMAGES = {
 const NarrativePostCovidPage = () => {
   return (
     <main className="page-container">
-      <section className="longform longform-wide">
+      <section className="longform longform-wide narrative-post">
         <h1 className="longform-title">Post Covid Analysis</h1>
         <p className="text-content">
           We examine changes after the onset of COVID‑19, focusing on how score

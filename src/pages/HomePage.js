@@ -6,9 +6,9 @@ const HomePage = () => {
     <main className="page-container">
       <section className="home-hero">
         <div className="home-hero-inner home-center">
-          <h1 className="longform-title home-hero-title">Project: Mind</h1>
+          <h1 className="longform-title home-hero-title">COVID-19 and Educational Opportunity</h1>
           <p className="longform-subtitle home-hero-subtitle">
-            Exploring how race, gender, and economic status shape educational opportunity and outcomes across time and place.
+            How did the COVID-19 pandemic affect educational opportunities and success across race, gender, and socio-economic status?
           </p>
         </div>
       </section>
@@ -16,25 +16,25 @@ const HomePage = () => {
       <section className="longform longform-wide home-center home-about">
         <h2 className="section-title">About the Project</h2>
         <p className="text-content">
-          This site presents a narrative and a set of visualizations about educational opportunity gaps in the United States. We analyze trends across districts and subgroups using data from the Stanford Education Data Archive (SEDA), pairing quantitative patterns with careful interpretation.
+          We analyze how the pandemic disrupted and reshaped learning opportunities across U.S. districts, focusing on differences by race, gender, and socio-economic status. Using data from the Stanford Education Data Archive (SEDA), we pair quantitative trends with context to understand where gaps widened, where recovery emerged, and who was most affected.
         </p>
       </section>
 
       <section className="longform longform-wide">
         <h2 className="section-title">Our Research Questions</h2>
         <ul className="research-list">
-          <li className="research-item">How have opportunity gaps changed since 2009, including the COVID‑19 period?</li>
-          <li className="research-item">How do gaps differ across subjects (Math vs. ELA) and regions?</li>
-          <li className="research-item">Which subgroups (race, gender, economic status) see the largest shifts?</li>
+          <li className="research-item">How did COVID-19 shift educational opportunities and success across race, gender, and socio-economic status?</li>
+          <li className="research-item">Where did gaps widen or narrow across subjects (Math vs. ELA), grades, and regions during and after the pandemic?</li>
+          <li className="research-item">Which student groups experienced the steepest declines or strongest recoveries, and what patterns stand out over time?</li>
         </ul>
       </section>
 
       <section className="longform longform-wide">
         <h2 className="section-title">Goals</h2>
         <ul className="research-list">
-          <li className="research-item">Surface clear, trustworthy visuals for trends and gaps.</li>
-          <li className="research-item">Explain methods and limits to avoid over‑claiming.</li>
-          <li className="research-item">Support equitable, informed conversations about opportunity.</li>
+          <li className="research-item">Provide clear visuals that trace pandemic-era declines and recoveries.</li>
+          <li className="research-item">Clarify subgroup differences so disparities by race, gender, and socio-economic status are visible and actionable.</li>
+          <li className="research-item">Ground findings in transparent methods to support informed, equitable responses.</li>
         </ul>
       </section>
     </main>

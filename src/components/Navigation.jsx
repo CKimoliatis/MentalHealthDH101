@@ -43,7 +43,11 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
       <nav className="nav">
         {/* Logo goes to Home */}
         <NavLink to="/" className="logo" onClick={closeMenu}>
-          Project:Mind
+          <img
+            src={`${process.env.PUBLIC_URL}/images/iconnav.png`}
+            alt="Bridging the Gap"
+            className="logo-image"
+          />
         </NavLink>
 
         {/* Desktop Navigation */}

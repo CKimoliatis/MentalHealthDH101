@@ -13,6 +13,9 @@ const LimitationsPage = () => {
           Missingness was small overall but uneven: smaller racial groups (Asian, Black, Hispanic, Native American) had higher proportions of missing values, and some years were thinner than others. To keep comparisons consistent we removed rows with missing values, but that choice reduces representation for already smaller subgroups.
         </p>
         <p className="text-content">
+          Our dataset did not capture mental health challenges, even though prior work shows they can shape educational opportunity. Rachel Oblath’s longitudinal study on urban, school-age children during the COVID-19 pandemic found Pediatric Symptom Checklist (PSC) scores had not returned to normal by the end of the study period, underscoring unmet demand for child mental health services and the risk of lasting impacts. Without measures like PSC or similar indicators, our analysis may overlook a confounding factor that could change how demographic background relates to educational outcomes.
+        </p>
+        <p className="text-content">
           Our ANOVA comparing pre/post-pandemic changes used subgroup averages, not individual-level data. Aggregation reduces variation and can overstate statistical significance. Uneven subgroup sizes also strain the ANOVA equal-variance assumption, so results should be read as directional patterns rather than precise effect estimates.
         </p>
 

@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4rem;
+  height: 5.5rem;
 }
 
 .logo {
@@ -25,10 +25,18 @@
   border: none;
   cursor: pointer;
   transition: color 0.3s;
+  display: inline-flex;
+  align-items: center;
 }
 
 .logo:hover {
   color: #3b82f6;
+}
+
+.logo-image {
+  height: 5rem;
+  width: auto;
+  display: block;
 }
 
 .nav-desktop {

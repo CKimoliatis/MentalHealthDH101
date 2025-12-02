@@ -124,46 +124,37 @@ const BibliographyPage = () => {
           </p>
 
           <details className="biblio-entry">
-            <summary className="biblio-summary">Marraccini, Marisa E., et al. “School‐based Mental Health Supports during COVID‐19: School Professional Perspectives.”</summary>
+            <summary className="biblio-summary">Educational Impacts of the COVID-19 Pandemic in the United States: Inequities by Race, Ethnicity, and Socioeconomic Status.</summary>
             <div className="text-content text-justify">
               <p className="biblio-paragraph">
-                Marraccini, Marisa E., et al. “School‐based Mental Health Supports during COVID‐19: School Professional Perspectives.” Psychology in the Schools, vol. 60, no. 7, 2023, pp. 2460–82, https://doi.org/10.1002/pits.22869.
+                Gee, Kevin A., Vigdis Asmundson, and Tseng Vang. “Educational Impacts of the COVID-19 Pandemic in the United States: Inequities by Race, Ethnicity, and Socioeconomic Status.” Current Opinion in Psychology, vol. 52, 2023, 101643, https://doi.org/10.1016/j.copsyc.2023.101643. PubMed.
               </p>
               <p className="biblio-paragraph">
-                This article argues that school mental health services stayed essential during COVID and could move online through things like virtual counseling check-ins, phone calls, and email, but access and communication problems still limited how well they reached students. The evidence comes from a mixed-methods study that surveyed 81 school professionals and interviewed 14 of them, and it highlights specific facilitators such as using clear platforms to connect with families and barriers such as limited communication that stalled follow-through. This is important because it turns “support student mental health” into realistic steps schools actually used and shows where those steps broke down. 
-              </p>
-              <p className="biblio-paragraph">
-                This explains the day-to-day mechanism: when multi-channel outreach works, students are more likely to show up, participate, and ask for help, and when communication falters, mental-health strain turns into missed work and low engagement; it also gives us concrete ideas to recommend, like proactive contact schedules, low-bandwidth options, and redundant ways to reach families.
+                This review article argues that COVID-19 amplified existing educational inequities in the U.S., with students of color and those from lower socioeconomic backgrounds experiencing more severe learning disruptions and fewer supports. The authors synthesize recent empirical studies on access to in-person instruction, technology, and racialized stressors to show how these factors shaped academic trajectories during the pandemic. This source is important because it connects pandemic learning loss directly to race and SES structures, which matches your group’s use of SEDA and other inequality-focused datasets. For our thesis, it helps frame our U.S. data (e.g., district-level gaps by race/SES and UC system outcomes) as part of a broader pattern where access to in-person schooling, devices, and stable learning environments were unevenly distributed, so any differences we see in test scores or mental health are not just “individual” but structurally produced.
               </p>
             </div>
           </details>
 
           <details className="biblio-entry">
-            <summary className="biblio-summary">Serrano‐Alarcón, Manuel, et al. “Impact of COVID‐19 Lockdowns on Mental Health: Evidence from a Quasi‐natural Experiment in England and Scotland.”</summary>
+            <summary className="biblio-summary">Engzell, Per, Arun Frey, and Mark D. Verhagen. “Learning Loss Due to School Closures During the COVID-19 Pandemic.”</summary>
             <div className="text-content text-justify">
               <p className="biblio-paragraph">
-                Serrano‐Alarcón, Manuel, et al. “Impact of COVID‐19 Lockdowns on Mental Health: Evidence from a Quasi‐natural Experiment in England and Scotland.” Health Economics, vol. 31, no. 2, 2022, pp. 284–96, https://doi.org/10.1002/hec.4453.
+                Engzell, Per, Arun Frey, and Mark D. Verhagen. “Learning Loss Due to School Closures During the COVID-19 Pandemic.” Proceedings of the National Academy of Sciences, vol. 118, no. 17, 2021, e2022376118, https://doi.org/10.1073/pnas.2022376118. PNAS. +1
               </p>
               <p className="biblio-paragraph">
-                This paper argues that mental health moved with policy stringency and timing, improving when lockdowns eased and worsening when they dragged on, with the biggest gains after easing seen among people with fewer resources. The evidence is a quasi-natural experiment comparing England and Scotland over time with a difference-in-differences approach, and it reports a bounce-back in mental health roughly equivalent to 31 percent of the initial decline right after the strict lockdown ended, with effects concentrated among lower socioeconomic groups. This is important because it shows policy choices directly shaped well-being, not just case counts. 
-              </p>
-              <p className="biblio-paragraph">
-                The article provides a policy backdrop for academic development: as restrictions tighten or ease, students’ emotional bandwidth shifts, which changes attendance, participation, and stamina for challenging work; it also supports pairing any school restrictions with added counseling capacity, flexible deadlines, and targeted family support to protect learning.
+                This article argues that students made little or no academic progress while learning from home during COVID-19 and that learning loss was most severe for students from disadvantaged homes. The authors use standardized test score data from primary-school students in the Netherlands and compare cohorts before and during school closures to estimate how much progress was lost. This resource is important because it quantifies actual learning loss (not just perceptions) and shows that closures widened preexisting socioeconomic achievement gaps. For our thesis, it gives strong empirical backing for the claim that remote learning amplified SES-based differences in academic performance, helping us interpret any larger losses we see for low-SES or marginalized groups in our U.S. and India datasets as part of a broader international pattern—not random noise.
               </p>
             </div>
           </details>
 
           <details className="biblio-entry">
-            <summary className="biblio-summary">Gazmararian, Julie, et al. “Impact of COVID‐19 Pandemic on the Mental Health of Students From 2 Semi‐Rural High Schools in Georgia.”</summary>
+            <summary className="biblio-summary">Meng, Wentao, et al. “A Systematic Review of the Effectiveness of Online Learning in Higher Education During the COVID-19 Pandemic Period.”</summary>
             <div className="text-content text-justify">
               <p className="biblio-paragraph">
-                Gazmararian, Julie, et al. “Impact of COVID‐19 Pandemic on the Mental Health of Students From 2 Semi‐Rural High Schools in Georgia.” The Journal of School Health, vol. 91, no. 5, 2021, pp. 356–69, https://doi.org/10.1111/josh.13007.
+                Meng, Wentao, et al. “A Systematic Review of the Effectiveness of Online Learning in Higher Education During the COVID-19 Pandemic Period.” Frontiers in Education, vol. 9, 2024, 1334153, https://doi.org/10.3389/feduc.2023.1334153.
               </p>
               <p className="biblio-paragraph">
-                This study argues that right after the Spring 2020 closures, high school students experienced higher stress, anxiety, depression, and loneliness, and nearly one-fourth of students reported being extremely or very worried about the pandemic, with worry and symptoms higher among girls, older students, racial and ethnic minority students students. The evidence is a cross-sectional online survey of two semi-rural Georgia high schools with 761 students in grades 9–12, which quantifies both overall symptom levels and subgroup differences. This is important because it shows who needed help first instead of treating all students the same. 
-              </p>
-              <p className="biblio-paragraph">
-                This source gives a clear baseline for why mental-health strain spilled into education-adjacent outcomes like absences, quiet participation, and missing assignments, and it supports a practical plan of universal check-ins for everyone plus extra counseling and outreach for the groups that were hit the hardest so their academic development does not slip.
+                This article argues that online learning in higher education during COVID-19 was moderately effective, but student performance and satisfaction depended heavily on factors like course design, interaction quality, and technology access. The authors systematically review empirical studies on university-level online courses during the pandemic, comparing outcomes such as grades, completion rates, engagement, and self-reported effectiveness. This resource is important because it moves beyond “online vs in-person is good/bad” and identifies which conditions make online formats work academically. For our thesis, it helps us interpret differences in academic performance and course satisfaction in our UC and Delhi datasets: we can connect patterns in attendance, grades, and time use to design factors (interaction, feedback, assessment style) and access factors (devices, connectivity), rather than vaguely blaming “online learning” itself.
               </p>
             </div>
           </details>

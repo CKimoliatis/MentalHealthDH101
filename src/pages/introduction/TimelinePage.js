@@ -5,7 +5,7 @@ const TimelinePage = () => {
   return (
     <main className="page-container">
       <section className="longform longform-wide">
-        <h1 className="longform-title">Timeline</h1>
+        <h1 className="longform-title">Timeline of Educational Accessibility in the U.S.</h1>
         {/* <p className="text-content">
           Summarize key milestones and events relevant to the project chronology. Add dates and brief descriptions to orient readers before diving into analysis.
         </p> */}

@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/MentalHealthDH101/static/css/main.d22e2baf.css",
-    "main.js": "/MentalHealthDH101/static/js/main.133cc7f6.js",
+    "main.css": "/MentalHealthDH101/static/css/main.d056ce4a.css",
+    "main.js": "/MentalHealthDH101/static/js/main.56c551a4.js",
     "static/media/banner.png": "/MentalHealthDH101/static/media/banner.a25851ce5e67f55b72df.png",
     "index.html": "/MentalHealthDH101/index.html",
-    "main.d22e2baf.css.map": "/MentalHealthDH101/static/css/main.d22e2baf.css.map",
-    "main.133cc7f6.js.map": "/MentalHealthDH101/static/js/main.133cc7f6.js.map"
+    "main.d056ce4a.css.map": "/MentalHealthDH101/static/css/main.d056ce4a.css.map",
+    "main.56c551a4.js.map": "/MentalHealthDH101/static/js/main.56c551a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.d22e2baf.css",
-    "static/js/main.133cc7f6.js"
+    "static/css/main.d056ce4a.css",
+    "static/js/main.56c551a4.js"
   ]
 }

@@ -84,7 +84,7 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
               Narrative <span className="caret">▾</span>
             </button>
             <div className="dropdown-menu" role="menu">
-              <NavLink to="/narrative/presenting" className="dropdown-item" onClick={closeMenu}>Presenting our work</NavLink>
+              <NavLink to="/narrative/presenting" className="dropdown-item" onClick={closeMenu}>Presenting Our Work</NavLink>
               <NavLink to="/narrative/pre-covid" className="dropdown-item" onClick={closeMenu}>Pre-Covid Analysis</NavLink>
               <NavLink to="/narrative/post-covid" className="dropdown-item" onClick={closeMenu}>Post Covid Analysis</NavLink>
             </div>

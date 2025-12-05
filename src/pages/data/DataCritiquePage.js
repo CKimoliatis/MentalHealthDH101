@@ -1,5 +1,5 @@
-import React from 'react';
-import '../Pages.css';
+import React from "react";
+import "../Pages.css";
 
 const DataCritiquePage = () => {
   return (
@@ -7,7 +7,18 @@ const DataCritiquePage = () => {
       <section className="longform longform-wide">
         <h1 className="longform-title">Data Critique</h1>
         <p className="text-content">
-          The SEDA dataset is separated into variables that allow us to compare student performance. First, this data is designed to track academic gaps. We can calculate the difference between average scores for Black and white students, for students from low-income families and higher-income families, and for male and female students. Second, since the data contains a period of data from 2009 to 2024, it shows historical trends as well. We can analyze and see if these gaps have been changing or staying the same over the years. Finally, the separation by school district illuminates geographic inequality. We can identify academic gaps across the entire country to see if they vary significantly by region. This allows us to identify where gaps are unusually small or where they are abnormally large.
+          The SEDA dataset is separated into variables that allow us to compare
+          student performance. First, this data is designed to track academic
+          gaps. We can calculate the difference between average scores for Black
+          and white students, for students from low-income families and
+          higher-income families, and for male and female students. Second,
+          since the data contains a period of data from 2009 to 2024, it shows
+          historical trends as well. We can analyze and see if these gaps have
+          been changing or staying the same over the years. Finally, the
+          separation by school district illuminates geographic inequality. We
+          can identify academic gaps across the entire country to see if they
+          vary significantly by region. This allows us to identify where gaps
+          are unusually small or where they are abnormally large.
         </p>
         <figure className="figure">
           <img
@@ -21,25 +32,58 @@ const DataCritiquePage = () => {
           <details>
             <summary>Show detailed description</summary>
             <p>
-              Diagram summarizing how SEDA partitions data by demographics,
-              tracks academic gaps across years, and highlights missing context
-              such as funding levels, curriculum design, and home environments
-              that are not captured by test-score averages.
+              A screenshot of the landing page of Stanford University’s site for
+              their Educational Opportunity Project containing our selected
+              datasets. The page features a dark blue background with a light
+              blue filled-in outfline of the Unites States of America.
+              White-colored text boldly describes the project’s purpose to
+              measure educational opportunity, as well as further description of
+              what the project entailed
             </p>
           </details>
         </figure>
         <p className="text-content">
-          The SEDA dataset provides a detailed quantitative view of educational performance by district, year, and subgroup, such as race, gender, and socioeconomic status, but it also leaves out a great deal of important context that shapes why these patterns exist. It focuses only on average test scores, so it does not include individual student data, classroom experiences, or the voices of teachers and families. The dataset also lacks information about school funding, teacher quality, curriculum design, and learning resources. All of these variables have a direct impact on students’ academic performance. It does not show home and community factors such as parental education, family income levels beyond subgroup averages, access to the internet or technology, and emotional well-being. Because of this, the data only captures what is easily measurable, not what is deeply meaningful.
+          The SEDA dataset provides a detailed quantitative view of educational
+          performance by district, year, and subgroup, such as race, gender, and
+          socioeconomic status, but it also leaves out a great deal of important
+          context that shapes why these patterns exist. It focuses only on
+          average test scores, so it does not include individual student data,
+          classroom experiences, or the voices of teachers and families. The
+          dataset also lacks information about school funding, teacher quality,
+          curriculum design, and learning resources. All of these variables have
+          a direct impact on students’ academic performance. It does not show
+          home and community factors such as parental education, family income
+          levels beyond subgroup averages, access to the internet or technology,
+          and emotional well-being. Because of this, the data only captures what
+          is easily measurable, not what is deeply meaningful.
         </p>
         <p className="text-content">
-          The structure of the dataset reflects a particular way of thinking about education, which is an ideology of quantification. It treats learning, opportunity, and inequality as things that can be summarized through numbers and categories. By dividing data strictly by demographics and test results, it assumes that academic inequality can be fully represented through measurable “gaps.” This approach simplifies human experiences into statistics and ignores the social, cultural, and emotional complexities behind those numbers. It also overlooks how race, class, and gender intersect in real life to shape opportunities differently for each student.
+          The structure of the dataset reflects a particular way of thinking
+          about education, which is an ideology of quantification. It treats
+          learning, opportunity, and inequality as things that can be summarized
+          through numbers and categories. By dividing data strictly by
+          demographics and test results, it assumes that academic inequality can
+          be fully represented through measurable “gaps.” This approach
+          simplifies human experiences into statistics and ignores the social,
+          cultural, and emotional complexities behind those numbers. It also
+          overlooks how race, class, and gender intersect in real life to shape
+          opportunities differently for each student.
         </p>
         <p className="text-content">
-          If these datasets were our only sources, we could describe where educational gaps exist and how they change over time, but not why they occur or how they might be resolved. The broader social forces, such as policy choices, historical inequities, and cultural contexts, that underlie the data would remain invisible. Therefore, while the SEDA datasets provide a powerful macro-level framework for understanding educational inequality, their insights must be interpreted within the larger context of lived experiences and systemic structures.
+          If these datasets were our only sources, we could describe where
+          educational gaps exist and how they change over time, but not why they
+          occur or how they might be resolved. The broader social forces, such
+          as policy choices, historical inequities, and cultural contexts, that
+          underlie the data would remain invisible. Therefore, while the SEDA
+          datasets provide a powerful macro-level framework for understanding
+          educational inequality, their insights must be interpreted within the
+          larger context of lived experiences and systemic structures.
         </p>
 
         <div className="next-section">
-          <a className="next-link" href="#/sources">Next section → Sourcing, Processing, & Presenting</a>
+          <a className="next-link" href="#/sources">
+            Next section → Sourcing, Processing, & Presenting
+          </a>
         </div>
       </section>
     </main>

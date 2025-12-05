@@ -21,7 +21,7 @@ const BackgroundPage = () => {
           <details>
             <summary>Show detailed description</summary>
             <p>
-              Students work from home desks using laptops and headsets to attend
+              Student works from a home desk using a laptop to attend
               virtual classes, illustrating the rapid shift from in-person
               schooling to remote instruction during the COVID-19 lockdowns.
             </p>

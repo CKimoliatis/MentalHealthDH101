@@ -264,6 +264,27 @@
   margin-top: 0.5rem;
 }
 
+.ack-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin: 1.5rem 0;
+}
+
+.ack-figure {
+  flex: 1 1 180px;
+  max-width: 220px;
+  text-align: center;
+}
+
+.ack-figure .figure-img {
+  width: 100%;
+  max-width: 180px;
+  margin: 0 auto;
+  display: block;
+}
+
 /* Simple visualization placeholder (wireframe box with an X) */
 .viz-placeholder {
   width: 100%;

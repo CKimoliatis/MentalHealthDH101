@@ -239,6 +239,17 @@
   text-align: center;
 }
 
+.figure-float-right {
+  float: right;
+  width: 40%;
+  max-width: 320px;
+  margin: 0 0 1rem 1.5rem;
+}
+
+.clear-float {
+  clear: both;
+}
+
 .figure-img {
   max-width: 100%;
   height: auto;
@@ -391,6 +402,15 @@
   .narrative-post .embed-responsive,
   .narrative-post .viz-placeholder {
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .figure-float-right {
+    float: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 1rem 0;
   }
 }
 

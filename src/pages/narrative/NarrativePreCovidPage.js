@@ -70,7 +70,7 @@ const NarrativePreCovidPage = () => {
           education—rather than income alone—predicts children’s early math and
           reading achievement indirectly through maternal sensitivity,
           cognitively stimulating home environments, and children’s
-          working-memory skills (Waters et al., 2025). These mechanisms
+          working-memory skills (<a href="https://doi.org/10.1016/j.jecp.2025.106335" target="_blank" rel="noopener noreferrer">Waters et al., 2025</a>). These mechanisms
           illustrate how early home environments shape foundational executive
           functions, especially working memory, which is strongly linked to
           later academic achievement from preschool through adolescence (Blair &
@@ -131,19 +131,26 @@ const NarrativePreCovidPage = () => {
           racial inequalities in U.S. education. “Barnes and Slate found that
           African American and Latino students enter higher education with lower
           levels of college readiness in both math and reading compared to their
-          White peers”（2023). Moreover, these disparities are often the
+          White peers” (2023). Moreover, these disparities are often the
           cumulative outcome of structural inequities—such as unequal school
           funding, teacher quality, and access to advanced coursework—that begin
           early in the K–12 pipeline. The SEDA data reinforces this by showing
           that these gaps exist well before students reach college.
         </p>
         <p className="text-content text-justify">
-          Watt et al. (2023) provide a psychological and social explanation for
-          why these gaps persist into post-secondary education. Their study
-          found that students of color are more likely to experience Adverse
-          Childhood Experiences (ACEs)—such as family instability, violence, or
-          chronic stress—and that these early-life adversities are significantly
-          correlated with lower GPAs in college. In other words, systemic
+          <a
+            href="https://doi.org/10.1080/07448481.2021.1947838"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Watt et al. (2023)
+          </a>{' '}
+          provide a psychological and social explanation for why these gaps
+          persist into post-secondary education. Their study found that students
+          of color are more likely to experience Adverse Childhood Experiences
+          (ACEs)—such as family instability, violence, or chronic stress—and
+          that these early-life adversities are significantly correlated with
+          lower GPAs in college. In other words, systemic
           inequities not only shape academic opportunities but also impose
           psychological burdens that hinder long-term educational outcomes.
           Thus, the racial achievement gaps visible in SEDA’s K–12 data reflect
@@ -231,7 +238,13 @@ const NarrativePreCovidPage = () => {
           other hand, Northeast and Northern states appear to already be high
           performing states. So, there could be a “ceiling effect” where these
           states have less room for improvement. As mentioned on the website
-          “Education Policy,” the article “Funding Disparities” states
+          “Education Policy,” the article “<a
+            href="https://www.newamerica.org/education-policy/topics/school-funding-and-resources/school-funding/funding-disparities/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Funding Disparities
+          </a>” states
           “wealthier states with a high fiscal capacity (typically those in the
           Northeast), have more funding available to spend on education than
           states with more limited resources (typically those in the South and
@@ -326,9 +339,14 @@ const NarrativePreCovidPage = () => {
         </p>
         <p className="text-content text-justify">
           This is a significant observation because it relates to one of the
-          findings that we found in the article “The Rise of Standards-Aligned
-          Instructional Materials for U.S. K-12 Mathematics and English Language
-          Arts Instruction” where author Julia H. Kaufman writes, “teachers
+          findings that we found in the article “<a
+            href="https://www.rand.org/pubs/research_reports/RRA134-11.html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            The Rise of Standards-Aligned Instructional Materials for U.S. K-12
+            Mathematics and English Language Arts Instruction
+          </a>” where author Julia H. Kaufman writes, “teachers
           across the United States are more likely to be using instructional
           materials aligned with state standards for mathematics than for ELA,
           particularly at the elementary and middle school levels” (3).

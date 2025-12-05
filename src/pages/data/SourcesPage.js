@@ -13,11 +13,17 @@ const SourcesPage = () => {
         </p>
 
         <figure className="figure">
-          <img
-            className="figure-img"
-            src="images/mental.png"
-            alt="Concept map on COVID-19’s impact on education (adapted from Bozkurt)."
-          />
+          <a
+            href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9255479/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="figure-img"
+              src="images/mental.png"
+              alt="Concept map on COVID-19’s impact on education (adapted from Bozkurt)."
+            />
+          </a>
           <figcaption className="figure-caption">
             Concept map reference mentioned above. Replace with your final image if available.
           </figcaption>

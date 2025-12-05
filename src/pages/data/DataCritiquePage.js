@@ -12,7 +12,7 @@ const DataCritiquePage = () => {
         <figure className="figure">
           <img
             className="figure-img"
-            src="/images/DataCritique.png"
+            src="images/DataCritique.png"
             alt="Visualization representing the SEDA data critique"
           />
           <figcaption className="figure-caption">

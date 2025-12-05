@@ -76,11 +76,9 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
               <NavLink to="/introduction/background" className="dropdown-item" onClick={closeMenu}>Background Information</NavLink>
               <NavLink to="/introduction/timeline" className="dropdown-item" onClick={closeMenu}>Timeline</NavLink>
               <NavLink to="/introduction/literature" className="dropdown-item" onClick={closeMenu}>Literature Review</NavLink>
+              <NavLink to="/data-critique" className="dropdown-item" onClick={closeMenu}>Data Critique</NavLink>
             </div>
           </div>
-           <NavLink to="/data-critique" className={desktopClass} onClick={closeMenu}>
-            Data Critique
-          </NavLink>
           <div className="nav-dropdown">
             <button type="button" className="nav-link dropdown-toggle" aria-haspopup="true" aria-expanded="false">
               Narrative <span className="caret">▾</span>
@@ -163,6 +161,7 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
               <NavLink to="/introduction/background" className={mobileClass} onClick={closeMenu}>Background Information</NavLink>
               <NavLink to="/introduction/timeline" className={mobileClass} onClick={closeMenu}>Timeline</NavLink>
               <NavLink to="/introduction/literature" className={mobileClass} onClick={closeMenu}>Literature Review</NavLink>
+              <NavLink to="/data-critique" className={mobileClass} onClick={closeMenu}>Data Critique</NavLink>
             </div>
           )}
 
@@ -182,10 +181,6 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
               <NavLink to="/narrative/post-covid" className={mobileClass} onClick={closeMenu}>Post Covid Analysis</NavLink>
             </div>
           )}
-
-          <NavLink to="/data-critique" className={mobileClass} onClick={closeMenu}>
-            Data Critique
-          </NavLink>
 
           {/* Conclusions */}
           <button

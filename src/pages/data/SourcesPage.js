@@ -25,8 +25,17 @@ const SourcesPage = () => {
             />
           </a>
           <figcaption className="figure-caption">
-            Concept map reference mentioned above. Replace with your final image if available.
+            Thematic concept mapping of COVID-19 and education-related papers
           </figcaption>
+          <details>
+            <summary>Show detailed description</summary>
+            <p>
+              Concept map tracing connections among pandemic themes: impact,
+              outbreak, coronavirus, pandemic, and social dimensions, showing how
+              digital pedagogy inequality and socio-economic disparities shape
+              student engagement during COVID-19.
+            </p>
+          </details>
         </figure>
 
         <p className="text-content">

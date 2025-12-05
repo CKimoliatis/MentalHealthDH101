@@ -18,6 +18,15 @@ const DataCritiquePage = () => {
           <figcaption className="figure-caption">
             Overview of SEDA data critique themes.
           </figcaption>
+          <details>
+            <summary>Show detailed description</summary>
+            <p>
+              Diagram summarizing how SEDA partitions data by demographics,
+              tracks academic gaps across years, and highlights missing context
+              such as funding levels, curriculum design, and home environments
+              that are not captured by test-score averages.
+            </p>
+          </details>
         </figure>
         <p className="text-content">
           The SEDA dataset provides a detailed quantitative view of educational performance by district, year, and subgroup, such as race, gender, and socioeconomic status, but it also leaves out a great deal of important context that shapes why these patterns exist. It focuses only on average test scores, so it does not include individual student data, classroom experiences, or the voices of teachers and families. The dataset also lacks information about school funding, teacher quality, curriculum design, and learning resources. All of these variables have a direct impact on students’ academic performance. It does not show home and community factors such as parental education, family income levels beyond subgroup averages, access to the internet or technology, and emotional well-being. Because of this, the data only captures what is easily measurable, not what is deeply meaningful.

@@ -44,6 +44,18 @@ const NarrativePreCovidPage = () => {
           <figcaption className="figure-caption">
             Figure 1: Socioeconomic Achievement Gap (non-ECD and ECD) by State
           </figcaption>
+          <details>
+            <summary>Show detailed description of this visualization</summary>
+            <p>
+              A U.S. map is shaded by state where the intensity of colors
+              indicate achievement gaps between economically disadvantaged and
+              non-disadvantaged students. A darker color indicates a larger
+              achievement gap while a lighter color indicates a smaller
+              achievement gap. Southern and Midwestern states appear the darkest
+              whereas Western states appear to be lighter. Thus, the South and
+              Midwest appear to have the widest gap.
+            </p>
+          </details>
         </figure>
         <p className="text-content text-justify">
           The socioeconomic achievement-gap map created from SEDA data
@@ -70,14 +82,21 @@ const NarrativePreCovidPage = () => {
           education—rather than income alone—predicts children’s early math and
           reading achievement indirectly through maternal sensitivity,
           cognitively stimulating home environments, and children’s
-          working-memory skills (<a href="https://doi.org/10.1016/j.jecp.2025.106335" target="_blank" rel="noopener noreferrer">Waters et al., 2025</a>). These mechanisms
-          illustrate how early home environments shape foundational executive
-          functions, especially working memory, which is strongly linked to
-          later academic achievement from preschool through adolescence (Blair &
-          Razza 2007; Ahmed et al. 2019). Because working memory consistently
-          predicts long-term gains in both math and reading, early SES-related
-          differences in cognitive stimulation consolidate into persistent
-          academic gaps over time.
+          working-memory skills (
+          <a
+            href="https://doi.org/10.1016/j.jecp.2025.106335"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Waters et al., 2025
+          </a>
+          ). These mechanisms illustrate how early home environments shape
+          foundational executive functions, especially working memory, which is
+          strongly linked to later academic achievement from preschool through
+          adolescence (Blair & Razza 2007; Ahmed et al. 2019). Because working
+          memory consistently predicts long-term gains in both math and reading,
+          early SES-related differences in cognitive stimulation consolidate
+          into persistent academic gaps over time.
         </p>
         <p className="text-content text-justify">
           When interpreted alongside this literature, the SEDA map highlights
@@ -116,6 +135,16 @@ const NarrativePreCovidPage = () => {
           <figcaption className="figure-caption">
             Racial and Ethnic Achievement Gaps by Subject — Math (2009–2019)
           </figcaption>
+          <details>
+            <summary>Show detailed description of this visualization</summary>
+            <p>
+              Bar chart comparing math and reading scores by race/ethnicity.
+              Asian and White students post the highest averages in both
+              subjects, while Black and Hispanic students score substantially
+              lower. The math gap is the most pronounced, indicating larger and
+              more persistent disparities in mathematics compared to reading.
+            </p>
+          </details>
         </figure>
         <p className="text-content text-justify">
           This visualization compares average math and English/language arts
@@ -144,18 +173,18 @@ const NarrativePreCovidPage = () => {
             rel="noopener noreferrer"
           >
             Watt et al. (2023)
-          </a>{' '}
+          </a>{" "}
           provide a psychological and social explanation for why these gaps
           persist into post-secondary education. Their study found that students
           of color are more likely to experience Adverse Childhood Experiences
           (ACEs)—such as family instability, violence, or chronic stress—and
           that these early-life adversities are significantly correlated with
-          lower GPAs in college. In other words, systemic
-          inequities not only shape academic opportunities but also impose
-          psychological burdens that hinder long-term educational outcomes.
-          Thus, the racial achievement gaps visible in SEDA’s K–12 data reflect
-          both structural disadvantages and trauma-related effects that continue
-          into higher education.
+          lower GPAs in college. In other words, systemic inequities not only
+          shape academic opportunities but also impose psychological burdens
+          that hinder long-term educational outcomes. Thus, the racial
+          achievement gaps visible in SEDA’s K–12 data reflect both structural
+          disadvantages and trauma-related effects that continue into higher
+          education.
         </p>
         <figure className="figure">
           {renderTableau(
@@ -167,6 +196,17 @@ const NarrativePreCovidPage = () => {
             Racial and Ethnic Achievement Gaps by Subject — Reading/Language
             Arts (2009–2019)
           </figcaption>
+          <details>
+            <summary>Show detailed description of this visualization</summary>
+            <p>
+              Line chart of racial achievement gaps from 2009–2019. The
+              White–Asian gap stays below zero, showing Asian students
+              outperform White students. The White–Hispanic gap remains positive
+              but narrows modestly, especially in reading. The White–Black gap
+              is largest and persistent, rising from about 0.55 to nearly 0.60
+              by 2019, indicating widening disparities despite equity efforts.
+            </p>
+          </details>
         </figure>
         <p className="text-content text-justify">
           This line trend visualization, which presents trend lines for racial
@@ -222,6 +262,16 @@ const NarrativePreCovidPage = () => {
           <figcaption className="figure-caption">
             Figure 2: Change in Academic Achievement
           </figcaption>
+          <details>
+            <summary>Show detailed description</summary>
+            <p>
+              A U.S. map showing states with positive or negative changes in
+              academic achievement from 2009 to 2019. Southern and Western
+              states are mostly shaded to indicate positive change, while
+              Northern and Northeastern states are shaded to indicate negative
+              change.
+            </p>
+          </details>
         </figure>
         <p className="text-content text-justify">
           From this list of those with positive versus negative change, we can
@@ -238,25 +288,27 @@ const NarrativePreCovidPage = () => {
           other hand, Northeast and Northern states appear to already be high
           performing states. So, there could be a “ceiling effect” where these
           states have less room for improvement. As mentioned on the website
-          “Education Policy,” the article “<a
+          “Education Policy,” the article “
+          <a
             href="https://www.newamerica.org/education-policy/topics/school-funding-and-resources/school-funding/funding-disparities/"
             target="_blank"
             rel="noopener noreferrer"
           >
             Funding Disparities
-          </a>” states
-          “wealthier states with a high fiscal capacity (typically those in the
-          Northeast), have more funding available to spend on education than
-          states with more limited resources (typically those in the South and
-          the West.” From this article, we can infer that one reason for this
-          ceiling effect could be because schools like those in the Northeast
-          already have more funding compared to states in the South and West.
-          So, this is a relevant trend for our project because this indicates
-          that it may be more beneficial for policymakers to do further research
-          in policies that specifically work to improve states like those in the
-          South and West who would greatly benefit from additional financial and
-          educational resources than states in the Northeast and North who, when
-          given additional resources, would experience diminishing returns.
+          </a>
+          ” states “wealthier states with a high fiscal capacity (typically
+          those in the Northeast), have more funding available to spend on
+          education than states with more limited resources (typically those in
+          the South and the West.” From this article, we can infer that one
+          reason for this ceiling effect could be because schools like those in
+          the Northeast already have more funding compared to states in the
+          South and West. So, this is a relevant trend for our project because
+          this indicates that it may be more beneficial for policymakers to do
+          further research in policies that specifically work to improve states
+          like those in the South and West who would greatly benefit from
+          additional financial and educational resources than states in the
+          Northeast and North who, when given additional resources, would
+          experience diminishing returns.
         </p>
 
         <h2 className="section-title">
@@ -270,11 +322,23 @@ const NarrativePreCovidPage = () => {
               alt="Figure 3: Male and Female Achievement Gap Over Time (2009-2019)"
             />
           ) : (
-            <div className="viz-placeholder" aria-label="Line chart placeholder" />
+            <div
+              className="viz-placeholder"
+              aria-label="Line chart placeholder"
+            />
           )}
           <figcaption className="figure-caption">
             Figure 3: Male and Female Achievement Gap Over Time (2009-2019)
           </figcaption>
+          <details>
+            <summary>Show detailed description</summary>
+            <p>
+              A line graph that shows gender achievement gaps in math and
+              reading/language arts from 2009 to 2019. The math line hovers near
+              zero, indicating almost no gender gap. The reading line hovers
+              around -0.25, indicating a slight gender gap.
+            </p>
+          </details>
         </figure>
         <p className="text-content text-justify">
           From this plot, we can see that there is a very slight gender gap for
@@ -309,6 +373,14 @@ const NarrativePreCovidPage = () => {
             Figure 4: Difference between Male and Female Students Grades for
             Math (2009 - 2019)
           </figcaption>
+          <details>
+            <summary>Show detailed description of this visualization</summary>
+            <p>
+              A U.S. map shaded by each state’s average difference between men
+              and women for math. Most states have values around zero with only
+              slight fluctuations in shading.
+            </p>
+          </details>
         </figure>
 
         <h2 className="section-title">
@@ -325,6 +397,15 @@ const NarrativePreCovidPage = () => {
             Figure 5: Difference between Male and Female Students Grades for
             Math (2009 - 2019)
           </figcaption>
+          <details>
+            <summary>Show detailed description of this visualization</summary>
+            <p>
+              A U.S. map shaded by each state’s average difference between male
+              and female reading/language arts scores. Shading varies more
+              widely than in the math map, reflecting larger and more variable
+              gender gaps across states.
+            </p>
+          </details>
         </figure>
 
         <p className="text-content text-justify">
@@ -339,29 +420,30 @@ const NarrativePreCovidPage = () => {
         </p>
         <p className="text-content text-justify">
           This is a significant observation because it relates to one of the
-          findings that we found in the article “<a
+          findings that we found in the article “
+          <a
             href="https://www.rand.org/pubs/research_reports/RRA134-11.html"
             target="_blank"
             rel="noopener noreferrer"
           >
             The Rise of Standards-Aligned Instructional Materials for U.S. K-12
             Mathematics and English Language Arts Instruction
-          </a>” where author Julia H. Kaufman writes, “teachers
-          across the United States are more likely to be using instructional
-          materials aligned with state standards for mathematics than for ELA,
-          particularly at the elementary and middle school levels” (3).
-          Additionally, we can see that the average RLA education gap score is
-          around -0.2 whereas the average score for math is around the interval
-          (-0.05, 0.05). So, this observation, in addition to the previous
-          article, can allow the audience to infer that there is a potential
-          association between having standardized materials and reducing the
-          education gap between men and women across subjects. One potential
-          reason for this association is that without standardized teaching,
-          some teachers may rely on more subjective approaches to teaching
-          reading and language arts compared to subjects that are more
-          standardized like math. For instance, a teacher may select a text
-          based on personal preference or emphasize discussion styles that favor
-          one gender over another.
+          </a>
+          ” where author Julia H. Kaufman writes, “teachers across the United
+          States are more likely to be using instructional materials aligned
+          with state standards for mathematics than for ELA, particularly at the
+          elementary and middle school levels” (3). Additionally, we can see
+          that the average RLA education gap score is around -0.2 whereas the
+          average score for math is around the interval (-0.05, 0.05). So, this
+          observation, in addition to the previous article, can allow the
+          audience to infer that there is a potential association between having
+          standardized materials and reducing the education gap between men and
+          women across subjects. One potential reason for this association is
+          that without standardized teaching, some teachers may rely on more
+          subjective approaches to teaching reading and language arts compared
+          to subjects that are more standardized like math. For instance, a
+          teacher may select a text based on personal preference or emphasize
+          discussion styles that favor one gender over another.
         </p>
         <p className="text-content text-justify">
           Thus, we suggest implementing policies that standardize reading and

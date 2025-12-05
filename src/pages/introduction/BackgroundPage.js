@@ -18,6 +18,14 @@ const BackgroundPage = () => {
           <figcaption className="figure-caption">
             Transition to online learning during COVID-19.
           </figcaption>
+          <details>
+            <summary>Show detailed description</summary>
+            <p>
+              Students work from home desks using laptops and headsets to attend
+              virtual classes, illustrating the rapid shift from in-person
+              schooling to remote instruction during the COVID-19 lockdowns.
+            </p>
+          </details>
         </figure>
         <p className="text-content text-justify">
           Although schools nationwide shifted to online synchronous classes, individual student experiences varied greatly depending on their previous backgrounds. For instance, if someone came from a wealthier socioeconomic status, they would have a much more seamless transition to online learning than someone who does not have the financial means to pivot as easily. Thus, in this project, we aim to first identify the current gaps in American educational opportunity and second assess how switching to online learning during COVID-19 has impacted these preexisting gaps.

@@ -12,7 +12,7 @@ const AcknowledgementsPage = () => {
         <figure className="figure">
           <img
             className="figure-img"
-            src="/images/wendy_perla.png"
+            src="images/wendy_perla.png"
             alt="Portrait of Dr. Wendy Perla Kurtz"
           />
           <figcaption className="figure-caption">Dr. Wendy Perla Kurtz</figcaption>
@@ -20,7 +20,7 @@ const AcknowledgementsPage = () => {
         <figure className="figure">
           <img
             className="figure-img"
-            src="/images/Pietro_Headshot.png"
+            src="images/Pietro_Headshot.png"
             alt="Portrait of TA Pietro Santachiara"
           />
           <figcaption className="figure-caption">TA Pietro Santachiara</figcaption>

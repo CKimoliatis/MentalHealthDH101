@@ -9,7 +9,7 @@ const LiteraturePage = () => {
         <p className="text-content">
           Before analyzing our datasets, we first began by looking through some research about the causes of education inequality, especially how structural and socioeconomic factors shape students’ learning experiences across different contexts. Our initial readings showed that the shift to online learning during the COVID-19 pandemic revealed how deeply socioeconomic privilege influences educational opportunity. For example, An’s study “The Hidden Costs of Virtual Learning” found that students from affluent families were able to avoid many of the academic challenges associated with remote learning by moving to private schools that reopened earlier, while marginalized students experienced higher dropout risk. This early finding showed us that socioeconomic status does not merely influence outcomes during crises but plays a central role in generating unequal opportunities in the first place.
         </p>
-        <figure className="figure">
+        <figure className="figure figure-float-right" style={{ width: '220px' }}>
           <img
             className="figure-img"
             src="images/inequality.png"
@@ -36,6 +36,7 @@ const LiteraturePage = () => {
         <p className="text-content">
           Across this literature, scholars generally agree that: Educational inequality is rooted in early socioeconomic and developmental conditions, including cognitive stimulation, parenting behaviors, and exposure to adversity. These early disadvantages accumulate over time, shaping academic trajectories before children reach high school. School structures, educator bias, and peer environments further amplify initial inequalities. However, tensions remain in the literature. Some scholars emphasize developmental and home-based mechanisms (Waters et al.), while others focus on institutional or peer-driven dynamics (Linnehan et al.; Diette & Oyelere). Moreover, although many studies document the causes of educational inequality, fewer examine how these mechanisms interact across regions or scale to state-level patterns—leaving an important gap that our SEDA analysis helps address.
         </p>
+        <div className="clear-float" />
         <div className="next-section">
           <a className="next-link" href="#/narrative/presenting">Next section → Presenting our work</a>
         </div>

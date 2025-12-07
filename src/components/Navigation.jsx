@@ -66,6 +66,9 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
               <NavLink to="/processing" className="dropdown-item" onClick={closeMenu}>
                 Processing
               </NavLink>
+              <NavLink to="/narrative/presenting" className="dropdown-item" onClick={closeMenu}>
+                Presenting Our Work
+              </NavLink>
             </div>
           </div>
           <div className="nav-dropdown">
@@ -84,7 +87,6 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
               Narrative <span className="caret">▾</span>
             </button>
             <div className="dropdown-menu" role="menu">
-              <NavLink to="/narrative/presenting" className="dropdown-item" onClick={closeMenu}>Presenting Our Work</NavLink>
               <NavLink to="/narrative/pre-covid" className="dropdown-item" onClick={closeMenu}>Pre-Covid Analysis</NavLink>
               <NavLink to="/narrative/post-covid" className="dropdown-item" onClick={closeMenu}>Post Covid Analysis</NavLink>
             </div>
@@ -144,6 +146,7 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
             <div className="mobile-submenu" role="group" aria-label="About">
               <NavLink to="/sources" className={mobileClass} onClick={closeMenu}>Sources</NavLink>
               <NavLink to="/processing" className={mobileClass} onClick={closeMenu}>Processing</NavLink>
+              <NavLink to="/narrative/presenting" className={mobileClass} onClick={closeMenu}>Presenting Our Work</NavLink>
             </div>
           )}
 
@@ -176,7 +179,6 @@ export default function Navigation({ mobileMenuOpen, setMobileMenuOpen }) {
           </button>
           {mobileSections.narrative && (
             <div className="mobile-submenu" role="group" aria-label="Narrative">
-              <NavLink to="/narrative/presenting" className={mobileClass} onClick={closeMenu}>Presenting our work</NavLink>
               <NavLink to="/narrative/pre-covid" className={mobileClass} onClick={closeMenu}>Pre-Covid Analysis</NavLink>
               <NavLink to="/narrative/post-covid" className={mobileClass} onClick={closeMenu}>Post Covid Analysis</NavLink>
             </div>

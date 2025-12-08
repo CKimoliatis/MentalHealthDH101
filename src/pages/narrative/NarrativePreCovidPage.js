@@ -2,7 +2,7 @@ import React from "react";
 import "../Pages.css";
 import TableauEmbed from "../../components/TableauEmbed";
 
-// Tableau share links for each visualization. Replace placeholders with your published viz URLs.
+// Tableau share links for each visualization.
 const TABLEAU_URLS = {
   fig1: "https://public.tableau.com/views/SEDAdata-1/SocioeconomicAchievementGapNon-ECDECDbyState?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link",
   racialSubjectMath:

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../Pages.css";
 
 // Image filenames for post‑COVID figures (TeamPage style public paths)
@@ -9,7 +9,24 @@ const IMAGES = {
   fig8: "images/precovid/fig8.png",
 };
 
+const LEGEND_ITEMS = [
+  { code: "all", label: "All students" },
+  { code: "asn", label: "Asian" },
+  { code: "wht", label: "White" },
+  { code: "hsp", label: "Hispanic" },
+  { code: "nam", label: "Native American" },
+  { code: "blk", label: "Black" },
+  { code: "fem", label: "Female" },
+  { code: "mal", label: "Male" },
+  { code: "ecd", label: "Economically Disadvantaged" },
+  { code: "nec", label: "Non-Economically Disadvantaged" },
+];
+
 const NarrativePostCovidPage = () => {
+  const [legendOpen, setLegendOpen] = useState(false);
+
+  const toggleLegend = () => setLegendOpen((prev) => !prev);
+
   return (
     <main className="page-container">
       <section className="longform longform-wide narrative-post">
@@ -19,6 +36,12 @@ const NarrativePostCovidPage = () => {
           differences shifted across racial and gender groups relative to the
           pre‑pandemic baseline.
         </p>
+
+        <div className="legend-trigger">
+          <button type="button" onClick={toggleLegend}>
+            Legend
+          </button>
+        </div>
 
         <h2 className="section-title">
           Average Math/Reading Score Difference Before and After Pandemic by
@@ -169,6 +192,38 @@ const NarrativePostCovidPage = () => {
             Next section → Results
           </a>
         </div>
+
+        {legendOpen && (
+          <div
+            className="legend-modal-overlay"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Legend for figure abbreviations"
+          >
+            <div className="legend-modal">
+              <div className="legend-header">
+                <h3 className="legend-title">Legend</h3>
+                <button
+                  type="button"
+                  className="legend-close"
+                  onClick={toggleLegend}
+                  aria-label="Close legend"
+                >
+                  ×
+                </button>
+              </div>
+              <p className="legend-note">Codes used in the post-COVID charts</p>
+              <div className="legend-grid">
+                {LEGEND_ITEMS.map((item) => (
+                  <div className="legend-item" key={item.code}>
+                    <span className="legend-code">{item.code}</span>
+                    <span className="legend-label">{item.label}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        )}
       </section>
     </main>
   );

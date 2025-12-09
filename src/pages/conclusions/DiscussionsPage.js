@@ -7,7 +7,6 @@ const DiscussionsPage = () => {
       <section className="longform longform-wide">
         <h1 className="longform-title">Discussions</h1>
         <p className="text-content text-justify">
-          Discussion
           Overall, our findings suggest that COVID-19 did not create new inequalities in education, but it made existing gaps worse. Even before the pandemic, economically disadvantaged students and many Black, Hispanic, and Native American students were already scoring lower than their peers. After COVID-19, these same groups often showed larger drops in scores, especially in reading. In contrast, some groups, such as Asian students in math, stayed more stable or even improved. This pattern suggests that families’ resources, access to technology, and school support strongly shaped how much students could continue learning during remote or disrupted schooling.
         </p>
         <p className="text-content text-justify">
